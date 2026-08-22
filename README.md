@@ -1,10 +1,31 @@
+
+# **About**
+This mod is about the Eldritch Realm, a dimension that defies the laws of nature and plunges the intrepid explorer into an otherworldly landscape of cosmic horror.
+To enter this new dimension you must go exploring the depths of the earth, there you will find a stronghold like structure that holds the key to discovering what lies beyond the overworld.
+
+- Adds 300+ blocks
+- 10+ ore types
+- 20+ mobs
+- 5+ structures
+- new dimension to explore
+
+### **Recomended to use EMI with the mod for an easy way to view recipes and all the available items.**
+
+<div align="center"></div><a href="https://modrinth.com/mod/emi"><img src="https://cdn.modrinth.com/data/cached_images/23944bf6972ccac29dbe6aef6bd893d76c0ebb11.png" ></a></div>
+
+
+## **NOTICE: Most blocks are currently not being generated in the world and are only accessible through the creative menu.**
+### **Eclipsium and Ebon Obsidian are the portal item/block.**
+
+
+
 <div align="center"><img src="https://cdn.modrinth.com/data/cached_images/fc2cb25ea962e10dda7249998032234c37e74345.png"></div>
 
-# <ins>What's going to be in the mod?</ins>
+# What's going to be in the mod?
 
 
 
-#### The mod is still in development so not everything that is planned is added quite yet, but will be with each update. And possibly adding new stuff that is not on this list.
+#### The mod is still in development so not everything that is planned is added quite yet, but will be with each update. And adding new stuff that is not on this list.
 
 
 ### Not Yet Added = ❌
@@ -21,28 +42,28 @@
 - ❌ Umbral Onyx
 - ❌ Wraithstone
 - ❌ Hauntrock
-- 🚧 Ebon Obsidian
+- ✔️ Ebon Obsidian
 - ❌ Mystic Marble
 - ❌ Netherweave
 - ❌ Twilight Shale
 - ❌ Ghostly Gabbro
-- 🚧 Enigma Basalt
+- ✔️ Enigma Basalt
 - ❌ Silent Sandstone
 - ❌ Cryptic Cher
 
 ## Ore/Material Blocks:
-- 🚧 Nebula Lapis
+- ✔️ Nebula Lapis
 - ✔️ Dreadquartz ( Similar functions to regular quartz )
-- 🚧 Eclipsium
+- ✔️ Eclipsium
 - ❌ Soulspark
 - ❌ Dreadium
 - ❌ Etherealite ( Stronger than Phantomite )
 - ❌ Phantomite ( Stronger than Shadowsteel )
-- ❌ Shadowsteel ( Stronger than Netherite )
+- ✔️ Shadowsteel ( Stronger than Netherite )
 - ❌ Voidstone
 - ❌ Mystic Crystal
 - ❌ Eldritch Essence
-- ❌ Hallowed Gold ( Stronger than Iron )
+- ✔️ Hallowed Gold ( Stronger than Iron )
 - ❌ Gantix Silver ( Stronger Than Enigmatic Iron )
 - ❌ Enigmatic Iron ( Stronger than Diamond )
 
@@ -123,10 +144,5 @@
 ####
 - ❌ Eldritch Watcher: A massive, floating eye surrounded by smaller eyes, each capable of launching destructive energy beams.
 
-## The Eldritch Realm Dimension 🚧 
-
-<div align="center"><a href="https://modrinth.com/mod/eldritch-realms/versions"><img src="https://cdn.modrinth.com/data/cached_images/7476acc4f41b0d95605f7752ed2c8c61f7fdeb53.png"></a></div>
-
-
-#
-<div align="center"><a href="https://modrinth.com/user/keeblekapa"><img src="https://cdn.modrinth.com/data/cached_images/b3a43e06e42a86e7733902580548ae341b64e035.png"></a> <a href="https://www.patreon.com/KeebleKommunity"><img src="https://cdn.modrinth.com/data/cached_images/24f87fc778b7853beb8ec0e6dbb9cafdbeeb094e.png"></a></div>
+## 🚧 _The Eldritch Realm Dimension_
+ 
