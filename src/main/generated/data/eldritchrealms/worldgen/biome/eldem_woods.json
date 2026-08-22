@@ -1,0 +1,68 @@
+{
+  "carvers": {
+    "air": [
+      "minecraft:cave",
+      "minecraft:cave_extra_underground",
+      "minecraft:canyon"
+    ]
+  },
+  "downfall": 0.0,
+  "effects": {
+    "fog_color": 5595496,
+    "foliage_color": 2964812,
+    "grass_color": 3360086,
+    "mood_sound": {
+      "block_search_extent": 8,
+      "offset": 2.0,
+      "sound": "minecraft:ambient.cave",
+      "tick_delay": 6000
+    },
+    "music": {
+      "max_delay": 24000,
+      "min_delay": 12000,
+      "replace_current_music": false,
+      "sound": {
+        "sound_id": "eldritchrealms:eldritch_realms_dimension_ambience"
+      }
+    },
+    "sky_color": 1584443,
+    "water_color": 3363686,
+    "water_fog_color": 3296347
+  },
+  "features": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      "eldritchrealms:dreadquartz_ore_placed",
+      "eldritchrealms:shadowsteel_ore_placed",
+      "eldritchrealms:hallow_gold_ore_placed",
+      "eldritchrealms:nebulatic_lapis_ore_placed",
+      "eldritchrealms:eclipsium_ore_placed"
+    ],
+    [],
+    [],
+    [
+      "eldritchrealms:eldem_placed",
+      "eldritchrealms:sablebell_placed",
+      "eldritchrealms:mythral_grass_placed",
+      "eldritchrealms:tall_mythral_grass_placed"
+    ]
+  ],
+  "has_precipitation": false,
+  "spawn_costs": {},
+  "spawners": {
+    "ambient": [],
+    "axolotls": [],
+    "creature": [],
+    "misc": [],
+    "monster": [],
+    "underground_water_creature": [],
+    "water_ambient": [],
+    "water_creature": []
+  },
+  "temperature": 0.4
+}

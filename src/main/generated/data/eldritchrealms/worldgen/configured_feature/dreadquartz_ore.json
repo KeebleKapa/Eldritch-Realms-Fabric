@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:ore",
+  "config": {
+    "discard_chance_on_air_exposure": 0.0,
+    "size": 10,
+    "targets": [
+      {
+        "state": {
+          "Name": "eldritchrealms:veilstone_dreadquartz_ore"
+        },
+        "target": {
+          "block": "eldritchrealms:veilstone",
+          "predicate_type": "minecraft:block_match"
+        }
+      },
+      {
+        "state": {
+          "Name": "eldritchrealms:shadowslate_dreadquartz_ore"
+        },
+        "target": {
+          "block": "eldritchrealms:shadowslate",
+          "predicate_type": "minecraft:block_match"
+        }
+      }
+    ]
+  }
+}

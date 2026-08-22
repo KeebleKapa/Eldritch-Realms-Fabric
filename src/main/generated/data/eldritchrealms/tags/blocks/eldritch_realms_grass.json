@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "eldritchrealms:mythral_grass",
+    "eldritchrealms:tall_mythral_grass",
+    "eldritchrealms:virelume_grass",
+    "eldritchrealms:tall_virelume_grass",
+    "eldritchrealms:nocturb_grass",
+    "eldritchrealms:tall_nocturb_grass"
+  ]
+}

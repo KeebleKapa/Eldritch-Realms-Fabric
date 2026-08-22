@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 300,
+  "experience": 3.0,
+  "group": "hallow_gold_nugget_from_veilstone_ore_smelting",
+  "ingredient": {
+    "item": "eldritchrealms:veilstone_hallow_gold_ore"
+  },
+  "result": "eldritchrealms:hallow_gold_nugget"
+}

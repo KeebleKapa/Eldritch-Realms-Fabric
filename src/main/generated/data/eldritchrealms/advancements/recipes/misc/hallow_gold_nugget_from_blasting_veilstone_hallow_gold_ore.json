@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:hallow_gold_nugget_from_blasting_veilstone_hallow_gold_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_veilstone_hallow_gold_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "eldritchrealms:veilstone_hallow_gold_ore"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_veilstone_hallow_gold_ore",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:hallow_gold_nugget_from_blasting_veilstone_hallow_gold_ore"
+    ]
+  },
+  "sends_telemetry_event": false
+}

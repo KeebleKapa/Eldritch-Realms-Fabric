@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "eldritchrealms:umbram_oak_leaves",
+    "eldritchrealms:phontum_leaves",
+    "eldritchrealms:flowering_phontum_leaves",
+    "eldritchrealms:eldem_leaves"
+  ]
+}

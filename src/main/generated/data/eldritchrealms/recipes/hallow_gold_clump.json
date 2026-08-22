@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "eldritchrealms:hallow_gold_nugget"
+    },
+    {
+      "item": "eldritchrealms:hallow_gold_nugget"
+    },
+    {
+      "item": "eldritchrealms:hallow_gold_nugget"
+    },
+    {
+      "item": "eldritchrealms:hallow_gold_nugget"
+    },
+    {
+      "item": "eldritchrealms:hallow_gold_nugget"
+    },
+    {
+      "item": "eldritchrealms:hallow_gold_nugget"
+    },
+    {
+      "item": "eldritchrealms:hallow_gold_nugget"
+    },
+    {
+      "item": "eldritchrealms:hallow_gold_nugget"
+    },
+    {
+      "item": "eldritchrealms:hallow_gold_nugget"
+    }
+  ],
+  "result": {
+    "item": "eldritchrealms:hallow_gold_clump"
+  }
+}
