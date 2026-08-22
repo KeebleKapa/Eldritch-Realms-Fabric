@@ -63,7 +63,7 @@ To enter this new dimension you must go exploring the depths of the earth, there
 - ❌ Voidstone
 - ❌ Mystic Crystal
 - ❌ Eldritch Essence
-- ❌ Hallowed Gold ( Stronger than Iron )
+- ✔️ Hallowed Gold ( Stronger than Iron )
 - ❌ Gantix Silver ( Stronger Than Enigmatic Iron )
 - ❌ Enigmatic Iron ( Stronger than Diamond )
 
