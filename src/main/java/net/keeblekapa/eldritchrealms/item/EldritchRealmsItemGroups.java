@@ -210,6 +210,7 @@ public class EldritchRealmsItemGroups {
                         entries.add(EldritchRealmsBlocks.GLOOMARBLE);
                         entries.add(EldritchRealmsBlocks.ECLIPSIUM_BLOCK);
                         entries.add(EldritchRealmsBlocks.SHADOWSTEEL_BLOCK);
+                        entries.add(EldritchRealmsBlocks.ENIGMATIC_IRON_BLOCK);
                         entries.add(EldritchRealmsBlocks.HALLOW_GOLD_BLOCK);
                         entries.add(EldritchRealmsBlocks.NEBULATIC_LAPIS_BLOCK);
 
@@ -220,6 +221,10 @@ public class EldritchRealmsItemGroups {
             new Identifier(EldritchRealms.MOD_ID, "eldritch_realms_ingredients"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.eldritch_realms_ingredients"))
                     .icon(() -> new ItemStack(EldritchRealmsItems.DREADQUARTZ)).entries((displayContext, entries) -> {
+
+                        entries.add(EldritchRealmsItems.REINFORCED_IRON_ROD);
+
+                        entries.add(EldritchRealmsItems.GLOOMARBLE_DUST);
 
                         entries.add(EldritchRealmsItems.DREADQUARTZ);
 
@@ -232,9 +237,9 @@ public class EldritchRealmsItemGroups {
                         entries.add(EldritchRealmsItems.SHADOWSTEEL_INGOT);
                         entries.add(EldritchRealmsItems.SHADOWSTEEL_DUST);
 
-                        entries.add(EldritchRealmsItems.GLOOMARBLE_DUST);
-
-                        entries.add(EldritchRealmsItems.REINFORCED_IRON_ROD);
+                        entries.add(EldritchRealmsItems.ENIGMATIC_IRON_CLUMP);
+                        entries.add(EldritchRealmsItems.ENIGMATIC_IRON_NUGGET);
+                        entries.add(EldritchRealmsItems.ENIGMATIC_IRON_INGOT);
 
                         entries.add(EldritchRealmsItems.HALLOW_GOLD_CLUMP);
                         entries.add(EldritchRealmsItems.HALLOW_GOLD_INGOT);
@@ -251,12 +256,17 @@ public class EldritchRealmsItemGroups {
                         entries.add(EldritchRealmsItems.SHADOWSTEEL_SHOVEL);
                         entries.add(EldritchRealmsItems.SHADOWSTEEL_HOE);
 
+                        entries.add(EldritchRealmsItems.ENIGMATIC_IRON_PICKAXE);
+                        entries.add(EldritchRealmsItems.ENIGMATIC_IRON_AXE);
+                        entries.add(EldritchRealmsItems.ENIGMATIC_IRON_SHOVEL);
+                        entries.add(EldritchRealmsItems.ENIGMATIC_IRON_HOE);
+
                         entries.add(EldritchRealmsItems.HALLOW_GOLD_PICKAXE);
                         entries.add(EldritchRealmsItems.HALLOW_GOLD_AXE);
                         entries.add(EldritchRealmsItems.HALLOW_GOLD_SHOVEL);
                         entries.add(EldritchRealmsItems.HALLOW_GOLD_HOE);
 
-
+                        entries.add(EldritchRealmsItems.EERIE_WATER_BUCKET);
 
                     }).build());
 
@@ -270,6 +280,13 @@ public class EldritchRealmsItemGroups {
                         entries.add(EldritchRealmsItems.SHADOWSTEEL_CHESTPLATE);
                         entries.add(EldritchRealmsItems.SHADOWSTEEL_LEGGINGS);
                         entries.add(EldritchRealmsItems.SHADOWSTEEL_BOOTS);
+
+                        entries.add(EldritchRealmsItems.ENIGMATIC_IRON_SWORD);
+                        entries.add(EldritchRealmsItems.ENIGMATIC_IRON_AXE);
+                        entries.add(EldritchRealmsItems.ENIGMATIC_IRON_HELMET);
+                        entries.add(EldritchRealmsItems.ENIGMATIC_IRON_CHESTPLATE);
+                        entries.add(EldritchRealmsItems.ENIGMATIC_IRON_LEGGINGS);
+                        entries.add(EldritchRealmsItems.ENIGMATIC_IRON_BOOTS);
 
                         entries.add(EldritchRealmsItems.HALLOW_GOLD_SWORD);
                         entries.add(EldritchRealmsItems.HALLOW_GOLD_AXE);
@@ -299,6 +316,8 @@ public class EldritchRealmsItemGroups {
                         entries.add(EldritchRealmsBlocks.SHADOWSLATE_ECLIPSIUM_ORE);
                         entries.add(EldritchRealmsBlocks.VEILSTONE_SHADOWSTEEL_ORE);
                         entries.add(EldritchRealmsBlocks.SHADOWSLATE_SHADOWSTEEL_ORE);
+                        entries.add(EldritchRealmsBlocks.VEILSTONE_ENIGMATIC_IRON_ORE);
+                        entries.add(EldritchRealmsBlocks.SHADOWSLATE_ENIGMATIC_IRON_ORE);
                         entries.add(EldritchRealmsBlocks.VEILSTONE_HALLOW_GOLD_ORE);
                         entries.add(EldritchRealmsBlocks.SHADOWSLATE_HALLOW_GOLD_ORE);
                         entries.add(EldritchRealmsBlocks.VEILSTONE_NEBULATIC_LAPIS_ORE);

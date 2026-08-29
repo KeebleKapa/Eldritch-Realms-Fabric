@@ -37,10 +37,11 @@ import java.util.OptionalInt;
 
 public class EldritchRealmsConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> DREADQUARTZ_ORE_KEY = registryKey("dreadquartz_ore");
-    public static final RegistryKey<ConfiguredFeature<?, ?>> SHADOWSTEEL_ORE_KEY = registryKey("shadowsteel_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> NEBULATIC_LAPIS_ORE_KEY = registryKey("nebulatic_lapis_ore");
-    public static final RegistryKey<ConfiguredFeature<?, ?>> ECLIPSIUM_ORE_KEY = registryKey("eclipsium_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> HALLOW_GOLD_ORE_KEY = registryKey("hallow_gold_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> ECLIPSIUM_ORE_KEY = registryKey("eclipsium_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> SHADOWSTEEL_ORE_KEY = registryKey("shadowsteel_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> ENIGMATIC_IRON_ORE_KEY = registryKey("enigmatic_iron_ore");
 
 
     public static final RegistryKey<ConfiguredFeature<?, ?>> PHONTUM_KEY = registryKey("phontum");
@@ -58,6 +59,9 @@ public class EldritchRealmsConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> TALL_VIRELUME_GRASS_KEY = registryKey("tall_virelume_grass");
     public static final RegistryKey<ConfiguredFeature<?, ?>> TALL_NOCTURB_GRASS_KEY = registryKey("tall_nocturb_grass");
 
+    public static final RegistryKey<ConfiguredFeature<?, ?>> PHONTUM_LAKE_KEY = registryKey("phontum_lake");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> ELDEM_LAKE_KEY = registryKey("eldem_lake");
+
 
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
 
@@ -71,34 +75,49 @@ public class EldritchRealmsConfiguredFeatures {
         RuleTest shadowslateReplaceable = new BlockMatchRuleTest(EldritchRealmsBlocks.SHADOWSLATE);
 
 
-
-
         List<OreFeatureConfig.Target> eldritchRealmDreadquartzOres =
                 List.of(OreFeatureConfig.createTarget(veilstoneReplaceable, EldritchRealmsBlocks.VEILSTONE_DREADQUARTZ_ORE.getDefaultState()),
                         OreFeatureConfig.createTarget(shadowslateReplaceable, EldritchRealmsBlocks.SHADOWSLATE_DREADQUARTZ_ORE.getDefaultState()));
-
-        List<OreFeatureConfig.Target> eldritchRealmShadowsteelOres =
-                List.of(OreFeatureConfig.createTarget(veilstoneReplaceable, EldritchRealmsBlocks.VEILSTONE_SHADOWSTEEL_ORE.getDefaultState()),
-                        OreFeatureConfig.createTarget(shadowslateReplaceable, EldritchRealmsBlocks.SHADOWSLATE_SHADOWSTEEL_ORE.getDefaultState()));
 
         List<OreFeatureConfig.Target> eldritchRealmNebulaticLapisOres =
                 List.of(OreFeatureConfig.createTarget(veilstoneReplaceable, EldritchRealmsBlocks.VEILSTONE_NEBULATIC_LAPIS_ORE.getDefaultState()),
                         OreFeatureConfig.createTarget(shadowslateReplaceable, EldritchRealmsBlocks.SHADOWSLATE_NEBULATIC_LAPIS_ORE.getDefaultState()));
 
-        List<OreFeatureConfig.Target> eldritchRealmEclipsiumOres =
-                List.of(OreFeatureConfig.createTarget(veilstoneReplaceable, EldritchRealmsBlocks.VEILSTONE_ECLIPSIUM_ORE.getDefaultState()),
-                        OreFeatureConfig.createTarget(shadowslateReplaceable, EldritchRealmsBlocks.SHADOWSLATE_ECLIPSIUM_ORE.getDefaultState()));
-
         List<OreFeatureConfig.Target> eldritchRealmHallowGoldOres =
                 List.of(OreFeatureConfig.createTarget(veilstoneReplaceable, EldritchRealmsBlocks.VEILSTONE_HALLOW_GOLD_ORE.getDefaultState()),
                         OreFeatureConfig.createTarget(shadowslateReplaceable, EldritchRealmsBlocks.SHADOWSLATE_HALLOW_GOLD_ORE.getDefaultState()));
 
-        // Dreadquartz Ore Feature //
-        register(context, DREADQUARTZ_ORE_KEY, Feature.ORE, new OreFeatureConfig(eldritchRealmDreadquartzOres, 10));
-        register(context, SHADOWSTEEL_ORE_KEY, Feature.ORE, new OreFeatureConfig(eldritchRealmShadowsteelOres, 6));
-        register(context, NEBULATIC_LAPIS_ORE_KEY, Feature.ORE, new OreFeatureConfig(eldritchRealmNebulaticLapisOres, 7));
-        register(context, ECLIPSIUM_ORE_KEY, Feature.ORE, new OreFeatureConfig(eldritchRealmEclipsiumOres, 3));
-        register(context, HALLOW_GOLD_ORE_KEY, Feature.ORE, new OreFeatureConfig(eldritchRealmHallowGoldOres, 5));
+        List<OreFeatureConfig.Target> eldritchRealmEclipsiumOres =
+                List.of(OreFeatureConfig.createTarget(veilstoneReplaceable, EldritchRealmsBlocks.VEILSTONE_ECLIPSIUM_ORE.getDefaultState()),
+                        OreFeatureConfig.createTarget(shadowslateReplaceable, EldritchRealmsBlocks.SHADOWSLATE_ECLIPSIUM_ORE.getDefaultState()));
+        
+
+        List<OreFeatureConfig.Target> eldritchRealmShadowsteelOres =
+                List.of(OreFeatureConfig.createTarget(veilstoneReplaceable, EldritchRealmsBlocks.VEILSTONE_SHADOWSTEEL_ORE.getDefaultState()),
+                        OreFeatureConfig.createTarget(shadowslateReplaceable, EldritchRealmsBlocks.SHADOWSLATE_SHADOWSTEEL_ORE.getDefaultState()));
+
+
+        List<OreFeatureConfig.Target> eldritchRealmEnigmaticIronOres =
+                List.of(OreFeatureConfig.createTarget(veilstoneReplaceable, EldritchRealmsBlocks.VEILSTONE_ENIGMATIC_IRON_ORE.getDefaultState()),
+                        OreFeatureConfig.createTarget(shadowslateReplaceable, EldritchRealmsBlocks.SHADOWSLATE_ENIGMATIC_IRON_ORE.getDefaultState()));
+
+        // Ore Feature //
+        register(context, DREADQUARTZ_ORE_KEY, Feature.ORE, new OreFeatureConfig(eldritchRealmDreadquartzOres, randomint(8, 12)));
+        register(context, NEBULATIC_LAPIS_ORE_KEY, Feature.ORE, new OreFeatureConfig(eldritchRealmNebulaticLapisOres, randomint(6, 9)));
+        register(context, HALLOW_GOLD_ORE_KEY, Feature.ORE, new OreFeatureConfig(eldritchRealmHallowGoldOres, randomint(5, 8)));
+//        register(context, SOULSPARK_ORE_KEY, Feature.ORE, new OreFeatureConfig(eldritchRealmSoulsparkOres, randomint(4, 6)));
+        register(context, ECLIPSIUM_ORE_KEY, Feature.ORE, new OreFeatureConfig(eldritchRealmEclipsiumOres, randomint(3, 5)));
+//        register(context, MYSTIC_CRYSTAL_ORE_KEY, Feature.ORE, new OreFeatureConfig(eldritchRealmMysticCrystalOres, randomint(3, 5)));
+//        register(context, DREADIUM_ORE_KEY, Feature.ORE, new OreFeatureConfig(eldritchRealmDreadiumOres, randomint(3, 5)));
+        register(context, ENIGMATIC_IRON_ORE_KEY, Feature.ORE, new OreFeatureConfig(eldritchRealmEnigmaticIronOres, randomint(4, 6)));
+//        register(context, ECLIPSIUM_ORE_KEY, Feature.ORE, new OreFeatureConfig(eldritchRealmEclipsiumOres, randomint(3, 5)));
+
+        register(context, SHADOWSTEEL_ORE_KEY, Feature.ORE, new OreFeatureConfig(eldritchRealmShadowsteelOres, randomint(3, 5)));
+//        register(context, VOIDSTONE_ORE_KEY, Feature.ORE, new OreFeatureConfig(eldritchRealmVoidstoneOres, randomint(2, 4)));
+//        register(context, PHANTOMITE_ORE_KEY, Feature.ORE, new OreFeatureConfig(eldritchRealmPhantomiteOres, randomint(2, 4)));
+//        register(context, ETHEREALITE_ORE_KEY, Feature.ORE, new OreFeatureConfig(eldritchRealmEtherealiteOres, randomint(2, 3)));
+//        register(context, ELDRITCH_ESSENCE_ORE_KEY, Feature.ORE, new OreFeatureConfig(eldritchRealmEldritchEssenceOres, randomint(1, 3)));
+
 
         register(context, UMBRAM_OAK_KEY, Feature.TREE,
                 new TreeFeatureConfig.Builder(
@@ -218,6 +237,23 @@ public class EldritchRealmsConfiguredFeatures {
                )
         );
 
+
+        ConfiguredFeatures.register(context, PHONTUM_LAKE_KEY, Feature.LAKE,
+                new LakeFeature.Config(
+                        BlockStateProvider.of(EldritchRealmsBlocks.EERIE_WATER),
+                        BlockStateProvider.of(EldritchRealmsBlocks.ASTRAL_SAND)
+                ));
+        ConfiguredFeatures.register(context, ELDEM_LAKE_KEY, Feature.LAKE,
+                new LakeFeature.Config(
+                        BlockStateProvider.of(EldritchRealmsBlocks.EERIE_WATER),
+                        BlockStateProvider.of(EldritchRealmsBlocks.EERIE_GRAVEL)
+                ));
+
+
+    }
+
+    private static int randomint(int i, int i1) {
+        return i + (int) (Math.random() * (i1 - i));
     }
 
 

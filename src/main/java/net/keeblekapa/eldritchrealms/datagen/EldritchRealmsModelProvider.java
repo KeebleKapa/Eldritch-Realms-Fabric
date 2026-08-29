@@ -200,11 +200,6 @@ public class EldritchRealmsModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(EldritchRealmsBlocks.GLISTENING_EBON_OBSIDIAN);
 
 
-        // Shadowsteel
-        blockStateModelGenerator.registerSimpleCubeAll(EldritchRealmsBlocks.SHADOWSTEEL_BLOCK);
-        blockStateModelGenerator.registerSimpleCubeAll(EldritchRealmsBlocks.VEILSTONE_SHADOWSTEEL_ORE);
-        blockStateModelGenerator.registerSimpleCubeAll(EldritchRealmsBlocks.SHADOWSLATE_SHADOWSTEEL_ORE);
-
 
         // Nebulatic Lapis
         blockStateModelGenerator.registerSimpleCubeAll(EldritchRealmsBlocks.NEBULATIC_LAPIS_BLOCK);
@@ -226,6 +221,17 @@ public class EldritchRealmsModelProvider extends FabricModelProvider {
         ebbPool.slab(EldritchRealmsBlocks.SMOOTH_ENIGMA_BASALT_BRICK_SLAB);
         ebbPool.wall(EldritchRealmsBlocks.SMOOTH_ENIGMA_BASALT_BRICK_WALL);
 
+
+        // Shadowsteel
+        blockStateModelGenerator.registerSimpleCubeAll(EldritchRealmsBlocks.SHADOWSTEEL_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(EldritchRealmsBlocks.VEILSTONE_SHADOWSTEEL_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(EldritchRealmsBlocks.SHADOWSLATE_SHADOWSTEEL_ORE);
+
+        // Enigmatic Iron
+        blockStateModelGenerator.registerSimpleCubeAll(EldritchRealmsBlocks.ENIGMATIC_IRON_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(EldritchRealmsBlocks.VEILSTONE_ENIGMATIC_IRON_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(EldritchRealmsBlocks.SHADOWSLATE_ENIGMATIC_IRON_ORE);
+
         // Eclipsium
         blockStateModelGenerator.registerSimpleCubeAll(EldritchRealmsBlocks.VEILSTONE_ECLIPSIUM_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(EldritchRealmsBlocks.SHADOWSLATE_ECLIPSIUM_ORE);
@@ -235,6 +241,8 @@ public class EldritchRealmsModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(EldritchRealmsBlocks.VEILSTONE_HALLOW_GOLD_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(EldritchRealmsBlocks.SHADOWSLATE_HALLOW_GOLD_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(EldritchRealmsBlocks.HALLOW_GOLD_BLOCK);
+
+
 
 
 
@@ -271,7 +279,22 @@ public class EldritchRealmsModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor(((ArmorItem) EldritchRealmsItems.SHADOWSTEEL_CHESTPLATE));
         itemModelGenerator.registerArmor(((ArmorItem) EldritchRealmsItems.SHADOWSTEEL_LEGGINGS));
         itemModelGenerator.registerArmor(((ArmorItem) EldritchRealmsItems.SHADOWSTEEL_BOOTS));
-        // Shadowsteel
+
+        // Enigmatic Iron
+        itemModelGenerator.register(EldritchRealmsItems.ENIGMATIC_IRON_INGOT, Models.GENERATED);
+        itemModelGenerator.register(EldritchRealmsItems.ENIGMATIC_IRON_NUGGET, Models.GENERATED);
+        itemModelGenerator.register(EldritchRealmsItems.ENIGMATIC_IRON_CLUMP, Models.GENERATED);
+        itemModelGenerator.register(EldritchRealmsItems.ENIGMATIC_IRON_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(EldritchRealmsItems.ENIGMATIC_IRON_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(EldritchRealmsItems.ENIGMATIC_IRON_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(EldritchRealmsItems.ENIGMATIC_IRON_AXE, Models.HANDHELD);
+        itemModelGenerator.register(EldritchRealmsItems.ENIGMATIC_IRON_HOE, Models.HANDHELD);
+        itemModelGenerator.registerArmor(((ArmorItem) EldritchRealmsItems.ENIGMATIC_IRON_HELMET));
+        itemModelGenerator.registerArmor(((ArmorItem) EldritchRealmsItems.ENIGMATIC_IRON_CHESTPLATE));
+        itemModelGenerator.registerArmor(((ArmorItem) EldritchRealmsItems.ENIGMATIC_IRON_LEGGINGS));
+        itemModelGenerator.registerArmor(((ArmorItem) EldritchRealmsItems.ENIGMATIC_IRON_BOOTS));
+
+        // Hallow Gold
         itemModelGenerator.register(EldritchRealmsItems.HALLOW_GOLD_INGOT, Models.GENERATED);
         itemModelGenerator.register(EldritchRealmsItems.HALLOW_GOLD_NUGGET, Models.GENERATED);
         itemModelGenerator.register(EldritchRealmsItems.HALLOW_GOLD_CLUMP, Models.GENERATED);
@@ -284,5 +307,9 @@ public class EldritchRealmsModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor(((ArmorItem) EldritchRealmsItems.HALLOW_GOLD_CHESTPLATE));
         itemModelGenerator.registerArmor(((ArmorItem) EldritchRealmsItems.HALLOW_GOLD_LEGGINGS));
         itemModelGenerator.registerArmor(((ArmorItem) EldritchRealmsItems.HALLOW_GOLD_BOOTS));
+
+
+        // Buckets
+        itemModelGenerator.register(EldritchRealmsItems.EERIE_WATER_BUCKET, Models.GENERATED);
     }
 }

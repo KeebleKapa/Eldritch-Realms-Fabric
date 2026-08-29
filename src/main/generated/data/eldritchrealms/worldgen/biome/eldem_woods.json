@@ -2,7 +2,6 @@
   "carvers": {
     "air": [
       "minecraft:cave",
-      "minecraft:cave_extra_underground",
       "minecraft:canyon"
     ]
   },
@@ -31,7 +30,9 @@
   },
   "features": [
     [],
-    [],
+    [
+      "eldritchrealms:eldem_lake_placed"
+    ],
     [],
     [],
     [],
@@ -39,6 +40,7 @@
     [
       "eldritchrealms:dreadquartz_ore_placed",
       "eldritchrealms:shadowsteel_ore_placed",
+      "eldritchrealms:enigmatic_iron_ore_placed",
       "eldritchrealms:hallow_gold_ore_placed",
       "eldritchrealms:nebulatic_lapis_ore_placed",
       "eldritchrealms:eclipsium_ore_placed"

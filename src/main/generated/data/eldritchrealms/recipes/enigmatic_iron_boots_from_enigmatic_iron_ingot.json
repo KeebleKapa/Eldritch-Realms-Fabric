@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "boots",
+  "key": {
+    "#": {
+      "item": "eldritchrealms:enigmatic_iron_ingot"
+    }
+  },
+  "pattern": [
+    "# #",
+    "# #"
+  ],
+  "result": {
+    "item": "eldritchrealms:enigmatic_iron_boots"
+  },
+  "show_notification": true
+}

@@ -21,6 +21,7 @@ public class EldritchRealmsDataGenerator implements DataGeneratorEntrypoint {
         pack.addProvider(EldritchRealmsModelProvider::new);
         pack.addProvider(EldritchRealmsRecipeProvider::new);
         pack.addProvider(EldritchRealmsWorldGenerator::new);
+        pack.addProvider(EldritchRealmsFluidTagProvider::new);
 
     }
 

@@ -36,121 +36,62 @@ public class EldritchRealmsLootTableProvider extends FabricBlockLootTableProvide
 
     @Override
     public void generate() {
-                addDrop(EldritchRealmsBlocks.ABYSSAL_GRANITE_BRICKS);
-                addDrop(EldritchRealmsBlocks.ABYSSAL_GRANITE_BRICK_STAIRS);
-                addDrop(EldritchRealmsBlocks.ABYSSAL_GRANITE_BRICK_SLAB);
-                addDrop(EldritchRealmsBlocks.ABYSSAL_GRANITE_BRICK_WALL);
-                addDrop(EldritchRealmsBlocks.ABYSSAL_GRANITE);
-                addDrop(EldritchRealmsBlocks.ABYSSAL_GRANITE_SLAB);
-                addDrop(EldritchRealmsBlocks.ABYSSAL_GRANITE_STAIRS);
-                addDrop(EldritchRealmsBlocks.ABYSSAL_GRANITE_WALL);
-                addDrop(EldritchRealmsBlocks.CRACKED_ABYSSAL_GRANITE_BRICKS);
-                addDrop(EldritchRealmsBlocks.CRACKED_ABYSSAL_GRANITE_BRICK_STAIRS);
-                addDrop(EldritchRealmsBlocks.CRACKED_ABYSSAL_GRANITE_BRICK_SLAB);
-                addDrop(EldritchRealmsBlocks.CRACKED_ABYSSAL_GRANITE_BRICK_WALL);
-                addDrop(EldritchRealmsBlocks.POLISHED_ABYSSAL_GRANITE);
-                addDrop(EldritchRealmsBlocks.POLISHED_ABYSSAL_GRANITE_SLAB);
-                addDrop(EldritchRealmsBlocks.POLISHED_ABYSSAL_GRANITE_STAIRS);
-                addDrop(EldritchRealmsBlocks.POLISHED_ABYSSAL_GRANITE_WALL);
-                addDrop(EldritchRealmsBlocks.MOSSY_ABYSSAL_GRANITE_BRICKS);
-                addDrop(EldritchRealmsBlocks.MOSSY_ABYSSAL_GRANITE_BRICK_STAIRS);
-                addDrop(EldritchRealmsBlocks.MOSSY_ABYSSAL_GRANITE_BRICK_SLAB);
-                addDrop(EldritchRealmsBlocks.MOSSY_ABYSSAL_GRANITE_BRICK_WALL);
-                addDrop(EldritchRealmsBlocks.MOSSY_ABYSSAL_GRANITE);
-                addDrop(EldritchRealmsBlocks.MOSSY_ABYSSAL_GRANITE_SLAB);
-                addDrop(EldritchRealmsBlocks.MOSSY_ABYSSAL_GRANITE_STAIRS);
-                addDrop(EldritchRealmsBlocks.MOSSY_ABYSSAL_GRANITE_WALL);
-                addDrop(EldritchRealmsBlocks.CRACKED_MOSSY_ABYSSAL_GRANITE_BRICKS);
-                addDrop(EldritchRealmsBlocks.CRACKED_MOSSY_ABYSSAL_GRANITE_BRICK_STAIRS);
-                addDrop(EldritchRealmsBlocks.CRACKED_MOSSY_ABYSSAL_GRANITE_BRICK_SLAB);
-                addDrop(EldritchRealmsBlocks.CRACKED_MOSSY_ABYSSAL_GRANITE_BRICK_WALL);
-                addDrop(EldritchRealmsBlocks.MOSSY_POLISHED_ABYSSAL_GRANITE);
-                addDrop(EldritchRealmsBlocks.MOSSY_POLISHED_ABYSSAL_GRANITE_SLAB);
-                addDrop(EldritchRealmsBlocks.MOSSY_POLISHED_ABYSSAL_GRANITE_STAIRS);
-                addDrop(EldritchRealmsBlocks.MOSSY_POLISHED_ABYSSAL_GRANITE_WALL);
-
-                addDrop(EldritchRealmsBlocks.ABYSSAL_GRANITE_BRICK_SLAB, slabDrops(EldritchRealmsBlocks.ABYSSAL_GRANITE_BRICK_SLAB));
-                addDrop(EldritchRealmsBlocks.ABYSSAL_GRANITE_SLAB, slabDrops(EldritchRealmsBlocks.ABYSSAL_GRANITE_SLAB));
-                addDrop(EldritchRealmsBlocks.CRACKED_ABYSSAL_GRANITE_BRICK_SLAB, slabDrops(EldritchRealmsBlocks.CRACKED_ABYSSAL_GRANITE_BRICK_SLAB));
-                addDrop(EldritchRealmsBlocks.POLISHED_ABYSSAL_GRANITE_SLAB, slabDrops(EldritchRealmsBlocks.POLISHED_ABYSSAL_GRANITE_SLAB));
-                addDrop(EldritchRealmsBlocks.MOSSY_ABYSSAL_GRANITE_BRICK_SLAB, slabDrops(EldritchRealmsBlocks.MOSSY_ABYSSAL_GRANITE_BRICK_SLAB));
-                addDrop(EldritchRealmsBlocks.MOSSY_ABYSSAL_GRANITE_SLAB, slabDrops(EldritchRealmsBlocks.MOSSY_ABYSSAL_GRANITE_SLAB));
-                addDrop(EldritchRealmsBlocks.CRACKED_MOSSY_ABYSSAL_GRANITE_BRICK_SLAB, slabDrops(EldritchRealmsBlocks.CRACKED_MOSSY_ABYSSAL_GRANITE_BRICK_SLAB));
-                addDrop(EldritchRealmsBlocks.MOSSY_POLISHED_ABYSSAL_GRANITE_SLAB, slabDrops(EldritchRealmsBlocks.MOSSY_POLISHED_ABYSSAL_GRANITE_SLAB));
 
 
+                /*
+                 * ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                 *
+                 *   STONE DROPS
+                 *
+                 * ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                 */
+
+                /// Abyssal Granite ///
+                addStoneFamilyDrops(EldritchRealmsBlocks.ABYSSAL_GRANITE, EldritchRealmsBlocks.ABYSSAL_GRANITE_STAIRS, EldritchRealmsBlocks.ABYSSAL_GRANITE_SLAB, EldritchRealmsBlocks.ABYSSAL_GRANITE_WALL);
+                addStoneFamilyDrops(EldritchRealmsBlocks.ABYSSAL_GRANITE_BRICKS, EldritchRealmsBlocks.ABYSSAL_GRANITE_BRICK_STAIRS, EldritchRealmsBlocks.ABYSSAL_GRANITE_BRICK_SLAB, EldritchRealmsBlocks.ABYSSAL_GRANITE_BRICK_WALL);
+                addStoneFamilyDrops(EldritchRealmsBlocks.POLISHED_ABYSSAL_GRANITE, EldritchRealmsBlocks.POLISHED_ABYSSAL_GRANITE_STAIRS, EldritchRealmsBlocks.POLISHED_ABYSSAL_GRANITE_SLAB, EldritchRealmsBlocks.POLISHED_ABYSSAL_GRANITE_WALL);
+                addStoneFamilyDrops(EldritchRealmsBlocks.CRACKED_ABYSSAL_GRANITE_BRICKS, EldritchRealmsBlocks.CRACKED_ABYSSAL_GRANITE_BRICK_STAIRS, EldritchRealmsBlocks.CRACKED_ABYSSAL_GRANITE_BRICK_SLAB, EldritchRealmsBlocks.CRACKED_ABYSSAL_GRANITE_BRICK_WALL);
+
+                addStoneFamilyDrops(EldritchRealmsBlocks.MOSSY_ABYSSAL_GRANITE, EldritchRealmsBlocks.MOSSY_ABYSSAL_GRANITE_STAIRS, EldritchRealmsBlocks.MOSSY_ABYSSAL_GRANITE_SLAB, EldritchRealmsBlocks.MOSSY_ABYSSAL_GRANITE_WALL);
+                addStoneFamilyDrops(EldritchRealmsBlocks.MOSSY_ABYSSAL_GRANITE_BRICKS, EldritchRealmsBlocks.MOSSY_ABYSSAL_GRANITE_BRICK_STAIRS, EldritchRealmsBlocks.MOSSY_ABYSSAL_GRANITE_BRICK_SLAB, EldritchRealmsBlocks.MOSSY_ABYSSAL_GRANITE_BRICK_WALL);
+                addStoneFamilyDrops(EldritchRealmsBlocks.MOSSY_POLISHED_ABYSSAL_GRANITE, EldritchRealmsBlocks.MOSSY_POLISHED_ABYSSAL_GRANITE_STAIRS, EldritchRealmsBlocks.MOSSY_POLISHED_ABYSSAL_GRANITE_SLAB, EldritchRealmsBlocks.MOSSY_POLISHED_ABYSSAL_GRANITE_WALL);
+                addStoneFamilyDrops(EldritchRealmsBlocks.CRACKED_MOSSY_ABYSSAL_GRANITE_BRICKS, EldritchRealmsBlocks.CRACKED_MOSSY_ABYSSAL_GRANITE_BRICK_STAIRS, EldritchRealmsBlocks.CRACKED_MOSSY_ABYSSAL_GRANITE_BRICK_SLAB, EldritchRealmsBlocks.CRACKED_MOSSY_ABYSSAL_GRANITE_BRICK_WALL);
+
+                /// Veilstone ///
                 addDrop(EldritchRealmsBlocks.VEILSTONE, silkTouchDrop(EldritchRealmsBlocks.VEILSTONE, EldritchRealmsBlocks.COBBLED_VEILSTONE));
-                addDrop(EldritchRealmsBlocks.VEILSTONE_SLAB);
                 addDrop(EldritchRealmsBlocks.VEILSTONE_STAIRS);
-                addDrop(EldritchRealmsBlocks.VEILSTONE_WALL);
-                addDrop(EldritchRealmsBlocks.COBBLED_VEILSTONE);
-                addDrop(EldritchRealmsBlocks.COBBLED_VEILSTONE_SLAB);
-                addDrop(EldritchRealmsBlocks.COBBLED_VEILSTONE_STAIRS);
-                addDrop(EldritchRealmsBlocks.COBBLED_VEILSTONE_WALL);
-                addDrop(EldritchRealmsBlocks.VEILSTONE_BRICKS);
-                addDrop(EldritchRealmsBlocks.VEILSTONE_BRICK_SLAB);
-                addDrop(EldritchRealmsBlocks.VEILSTONE_BRICK_STAIRS);
-                addDrop(EldritchRealmsBlocks.VEILSTONE_BRICK_WALL);
-                addDrop(EldritchRealmsBlocks.SMOOTH_VEILSTONE);
-                addDrop(EldritchRealmsBlocks.SMOOTH_VEILSTONE_SLAB);
-                addDrop(EldritchRealmsBlocks.SMOOTH_VEILSTONE_STAIRS);
-                addDrop(EldritchRealmsBlocks.SMOOTH_VEILSTONE_WALL);
-
                 addDrop(EldritchRealmsBlocks.VEILSTONE_SLAB, slabDrops(EldritchRealmsBlocks.VEILSTONE_SLAB));
-                addDrop(EldritchRealmsBlocks.COBBLED_VEILSTONE_SLAB, slabDrops(EldritchRealmsBlocks.COBBLED_VEILSTONE_SLAB));
-                addDrop(EldritchRealmsBlocks.VEILSTONE_BRICK_SLAB, slabDrops(EldritchRealmsBlocks.VEILSTONE_BRICK_SLAB));
-                addDrop(EldritchRealmsBlocks.SMOOTH_VEILSTONE_SLAB, slabDrops(EldritchRealmsBlocks.SMOOTH_VEILSTONE_SLAB));
+                addDrop(EldritchRealmsBlocks.VEILSTONE_WALL);
+                addStoneFamilyDrops(EldritchRealmsBlocks.COBBLED_VEILSTONE, EldritchRealmsBlocks.COBBLED_VEILSTONE_STAIRS, EldritchRealmsBlocks.COBBLED_VEILSTONE_SLAB, EldritchRealmsBlocks.COBBLED_VEILSTONE_WALL);
+                addStoneFamilyDrops(EldritchRealmsBlocks.VEILSTONE_BRICKS, EldritchRealmsBlocks.VEILSTONE_BRICK_STAIRS, EldritchRealmsBlocks.VEILSTONE_BRICK_SLAB, EldritchRealmsBlocks.VEILSTONE_BRICK_WALL);
+                addStoneFamilyDrops(EldritchRealmsBlocks.SMOOTH_VEILSTONE, EldritchRealmsBlocks.SMOOTH_VEILSTONE_STAIRS, EldritchRealmsBlocks.SMOOTH_VEILSTONE_SLAB, EldritchRealmsBlocks.SMOOTH_VEILSTONE_WALL);
 
+                /// Shadowslate ///
+                addStoneFamilyDrops(EldritchRealmsBlocks.SHADOWSLATE, EldritchRealmsBlocks.SHADOWSLATE_STAIRS, EldritchRealmsBlocks.SHADOWSLATE_SLAB, EldritchRealmsBlocks.SHADOWSLATE_WALL);
+                addStoneFamilyDrops(EldritchRealmsBlocks.POLISHED_SHADOWSLATE, EldritchRealmsBlocks.POLISHED_SHADOWSLATE_STAIRS, EldritchRealmsBlocks.POLISHED_SHADOWSLATE_SLAB, EldritchRealmsBlocks.POLISHED_SHADOWSLATE_WALL);
+                addStoneFamilyDrops(EldritchRealmsBlocks.SHADOWSLATE_BRICKS, EldritchRealmsBlocks.SHADOWSLATE_BRICK_STAIRS, EldritchRealmsBlocks.SHADOWSLATE_BRICK_SLAB, EldritchRealmsBlocks.SHADOWSLATE_BRICK_WALL);
+                addStoneFamilyDrops(EldritchRealmsBlocks.SHADOWSLATE_TILES, EldritchRealmsBlocks.SHADOWSLATE_TILE_STAIRS, EldritchRealmsBlocks.SHADOWSLATE_TILE_SLAB, EldritchRealmsBlocks.SHADOWSLATE_TILE_WALL);
+                addStoneFamilyDrops(EldritchRealmsBlocks.CRACKED_SHADOWSLATE_BRICKS, EldritchRealmsBlocks.CRACKED_SHADOWSLATE_BRICK_STAIRS, EldritchRealmsBlocks.CRACKED_SHADOWSLATE_BRICK_SLAB, EldritchRealmsBlocks.CRACKED_SHADOWSLATE_BRICK_WALL);
 
-                addDrop(EldritchRealmsBlocks.SHADOWSLATE);
-                addDrop(EldritchRealmsBlocks.SHADOWSLATE_STAIRS);
-                addDrop(EldritchRealmsBlocks.SHADOWSLATE_WALL);
-                addDrop(EldritchRealmsBlocks.POLISHED_SHADOWSLATE);
-                addDrop(EldritchRealmsBlocks.POLISHED_SHADOWSLATE_STAIRS);
-                addDrop(EldritchRealmsBlocks.POLISHED_SHADOWSLATE_WALL);
-                addDrop(EldritchRealmsBlocks.SHADOWSLATE_BRICKS);
-                addDrop(EldritchRealmsBlocks.SHADOWSLATE_BRICK_STAIRS);
-                addDrop(EldritchRealmsBlocks.SHADOWSLATE_BRICK_WALL);
-                addDrop(EldritchRealmsBlocks.SHADOWSLATE_TILES);
-                addDrop(EldritchRealmsBlocks.SHADOWSLATE_TILE_STAIRS);
-                addDrop(EldritchRealmsBlocks.SHADOWSLATE_TILE_WALL);
-                addDrop(EldritchRealmsBlocks.CRACKED_SHADOWSLATE_BRICKS);
-                addDrop(EldritchRealmsBlocks.CRACKED_SHADOWSLATE_BRICK_STAIRS);
-                addDrop(EldritchRealmsBlocks.CRACKED_SHADOWSLATE_BRICK_WALL);
-                addDrop(EldritchRealmsBlocks.CRACKED_SHADOWSLATE_TILES);
-                addDrop(EldritchRealmsBlocks.CRACKED_SHADOWSLATE_TILE_STAIRS);
-                addDrop(EldritchRealmsBlocks.CRACKED_SHADOWSLATE_TILE_WALL);
+                /// Crimson Cobble ///
+                addStoneFamilyDrops(EldritchRealmsBlocks.CRIMSON_COBBLE, EldritchRealmsBlocks.CRIMSON_COBBLE_STAIRS, EldritchRealmsBlocks.CRIMSON_COBBLE_SLAB, EldritchRealmsBlocks.CRIMSON_COBBLE_WALL);
 
-                addDrop(EldritchRealmsBlocks.SHADOWSLATE_SLAB, slabDrops(EldritchRealmsBlocks.SHADOWSLATE_SLAB));
-                addDrop(EldritchRealmsBlocks.POLISHED_SHADOWSLATE_SLAB, slabDrops(EldritchRealmsBlocks.POLISHED_SHADOWSLATE_SLAB));
-                addDrop(EldritchRealmsBlocks.SHADOWSLATE_BRICK_SLAB, slabDrops(EldritchRealmsBlocks.SHADOWSLATE_BRICK_SLAB));
-                addDrop(EldritchRealmsBlocks.SHADOWSLATE_TILE_SLAB, slabDrops(EldritchRealmsBlocks.SHADOWSLATE_TILE_SLAB));
-                addDrop(EldritchRealmsBlocks.CRACKED_SHADOWSLATE_BRICK_SLAB, slabDrops(EldritchRealmsBlocks.CRACKED_SHADOWSLATE_BRICK_SLAB));
-                addDrop(EldritchRealmsBlocks.CRACKED_SHADOWSLATE_TILE_SLAB, slabDrops(EldritchRealmsBlocks.CRACKED_SHADOWSLATE_TILE_SLAB));
-
-
-                addDrop(EldritchRealmsBlocks.CRIMSON_COBBLE);
-                addDrop(EldritchRealmsBlocks.CRIMSON_COBBLE_STAIRS);
-                addDrop(EldritchRealmsBlocks.CRIMSON_COBBLE_WALL);
-                addDrop(EldritchRealmsBlocks.CRIMSON_COBBLE_SLAB, slabDrops(EldritchRealmsBlocks.CRIMSON_COBBLE_SLAB));
-
+                /// Eldritch Limestone ///
                 addDrop(EldritchRealmsBlocks.ELDRITCH_LIMESTONE_PILLAR);
-                addDrop(EldritchRealmsBlocks.ELDRITCH_LIMESTONE);
-                addDrop(EldritchRealmsBlocks.ELDRITCH_LIMESTONE_STAIRS);
-                addDrop(EldritchRealmsBlocks.ELDRITCH_LIMESTONE_SLAB, slabDrops(EldritchRealmsBlocks.ELDRITCH_LIMESTONE_SLAB));
-                addDrop(EldritchRealmsBlocks.ELDRITCH_LIMESTONE_WALL);
-                addDrop(EldritchRealmsBlocks.POLISHED_ELDRITCH_LIMESTONE);
-                addDrop(EldritchRealmsBlocks.POLISHED_ELDRITCH_LIMESTONE_STAIRS);
-                addDrop(EldritchRealmsBlocks.POLISHED_ELDRITCH_LIMESTONE_SLAB, slabDrops(EldritchRealmsBlocks.POLISHED_ELDRITCH_LIMESTONE_SLAB));
-                addDrop(EldritchRealmsBlocks.POLISHED_ELDRITCH_LIMESTONE_WALL);
-                addDrop(EldritchRealmsBlocks.ELDRITCH_LIMESTONE_BRICKS);
-                addDrop(EldritchRealmsBlocks.ELDRITCH_LIMESTONE_BRICK_STAIRS);
-                addDrop(EldritchRealmsBlocks.ELDRITCH_LIMESTONE_BRICK_SLAB, slabDrops(EldritchRealmsBlocks.ELDRITCH_LIMESTONE_BRICK_SLAB));
-                addDrop(EldritchRealmsBlocks.ELDRITCH_LIMESTONE_BRICK_WALL);
+                addStoneFamilyDrops(EldritchRealmsBlocks.ELDRITCH_LIMESTONE, EldritchRealmsBlocks.ELDRITCH_LIMESTONE_STAIRS, EldritchRealmsBlocks.ELDRITCH_LIMESTONE_SLAB, EldritchRealmsBlocks.ELDRITCH_LIMESTONE_WALL);
+                addStoneFamilyDrops(EldritchRealmsBlocks.POLISHED_ELDRITCH_LIMESTONE, EldritchRealmsBlocks.POLISHED_ELDRITCH_LIMESTONE_STAIRS, EldritchRealmsBlocks.POLISHED_ELDRITCH_LIMESTONE_SLAB, EldritchRealmsBlocks.POLISHED_ELDRITCH_LIMESTONE_WALL);
+                addStoneFamilyDrops(EldritchRealmsBlocks.ELDRITCH_LIMESTONE_BRICKS, EldritchRealmsBlocks.ELDRITCH_LIMESTONE_BRICK_STAIRS, EldritchRealmsBlocks.ELDRITCH_LIMESTONE_BRICK_SLAB, EldritchRealmsBlocks.ELDRITCH_LIMESTONE_BRICK_WALL);
 
 
-                addDrop(EldritchRealmsBlocks.GLOOMARBLE, sevenToNineDrops(EldritchRealmsBlocks.GLOOMARBLE, EldritchRealmsItems.GLOOMARBLE_DUST));
+                /*
+                * ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                *
+                *   WOOD DROPS
+                *
+                * ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                */
 
+                /// Umbram Oak ///
                 addDrop(EldritchRealmsBlocks.UMBRAM_OAK_LOG);
                 addDrop(EldritchRealmsBlocks.UMBRAM_OAK_WOOD);
                 addDrop(EldritchRealmsBlocks.STRIPPED_UMBRAM_OAK_LOG);
@@ -167,6 +108,7 @@ public class EldritchRealmsLootTableProvider extends FabricBlockLootTableProvide
                 addDrop(EldritchRealmsBlocks.UMBRAM_OAK_SAPLING);
                 addDrop(EldritchRealmsBlocks.UMBRAM_OAK_LEAVES, leavesDrops(EldritchRealmsBlocks.UMBRAM_OAK_LEAVES, EldritchRealmsBlocks.UMBRAM_OAK_SAPLING, 0.05f));
 
+                /// Phontum ///
                 addDrop(EldritchRealmsBlocks.PHONTUM_LOG);
                 addDrop(EldritchRealmsBlocks.PHONTUM_WOOD);
                 addDrop(EldritchRealmsBlocks.STRIPPED_PHONTUM_LOG);
@@ -184,7 +126,7 @@ public class EldritchRealmsLootTableProvider extends FabricBlockLootTableProvide
                 addDrop(EldritchRealmsBlocks.PHONTUM_LEAVES, leavesDrops(EldritchRealmsBlocks.PHONTUM_LEAVES, EldritchRealmsBlocks.PHONTUM_SAPLING, 0.05f));
                 addDrop(EldritchRealmsBlocks.FLOWERING_PHONTUM_LEAVES, leavesDrops(EldritchRealmsBlocks.FLOWERING_PHONTUM_LEAVES, EldritchRealmsBlocks.PHONTUM_SAPLING, 0.05f));
 
-
+                /// Eldem ///
                 addDrop(EldritchRealmsBlocks.ELDEM_LOG);
                 addDrop(EldritchRealmsBlocks.ELDEM_WOOD);
                 addDrop(EldritchRealmsBlocks.STRIPPED_ELDEM_LOG);
@@ -201,23 +143,16 @@ public class EldritchRealmsLootTableProvider extends FabricBlockLootTableProvide
                 addDrop(EldritchRealmsBlocks.ELDEM_SAPLING);
                 addDrop(EldritchRealmsBlocks.ELDEM_LEAVES, leavesDrops(EldritchRealmsBlocks.ELDEM_LEAVES, EldritchRealmsBlocks.ELDEM_SAPLING, 0.05f));
 
-                addDrop(EldritchRealmsBlocks.VEILSTONE_DREADQUARTZ_ORE, twoToFiveDrops(EldritchRealmsBlocks.VEILSTONE_DREADQUARTZ_ORE, EldritchRealmsItems.DREADQUARTZ));
-                addDrop(EldritchRealmsBlocks.SHADOWSLATE_DREADQUARTZ_ORE, twoToFiveDrops(EldritchRealmsBlocks.SHADOWSLATE_DREADQUARTZ_ORE, EldritchRealmsItems.DREADQUARTZ));
-                addDrop(EldritchRealmsBlocks.DREADQUARTZ_BLOCK);
-                addDrop(EldritchRealmsBlocks.DREADQUARTZ_STAIRS);
-                addDrop(EldritchRealmsBlocks.DREADQUARTZ_SLAB, slabDrops(EldritchRealmsBlocks.DREADQUARTZ_SLAB));
-                addDrop(EldritchRealmsBlocks.DREADQUARTZ_WALL);
-                addDrop(EldritchRealmsBlocks.DREADQUARTZ_BRICKS);
-                addDrop(EldritchRealmsBlocks.DREADQUARTZ_BRICK_STAIRS);
-                addDrop(EldritchRealmsBlocks.DREADQUARTZ_BRICK_SLAB, slabDrops(EldritchRealmsBlocks.DREADQUARTZ_BRICK_SLAB));
-                addDrop(EldritchRealmsBlocks.DREADQUARTZ_BRICK_WALL);
-                addDrop(EldritchRealmsBlocks.SMOOTH_DREADQUARTZ);
-                addDrop(EldritchRealmsBlocks.SMOOTH_DREADQUARTZ_STAIRS);
-                addDrop(EldritchRealmsBlocks.SMOOTH_DREADQUARTZ_SLAB, slabDrops(EldritchRealmsBlocks.SMOOTH_DREADQUARTZ_SLAB));
-                addDrop(EldritchRealmsBlocks.SMOOTH_DREADQUARTZ_WALL);
-                addDrop(EldritchRealmsBlocks.DREADQUARTZ_PILLAR);
-                addDrop(EldritchRealmsBlocks.CHISELED_DREADQUARTZ);
 
+                /*
+                 * ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                 *
+                 *   GROUND DROPS
+                 *
+                 * ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                 */
+
+                /// Eldritch Grass and Soil ///
                 addDrop(EldritchRealmsBlocks.MYTHRAL_GRASS_BLOCK, silkTouchDrop(EldritchRealmsBlocks.MYTHRAL_GRASS_BLOCK, EldritchRealmsBlocks.MARRED_SOIL));
                 addDrop(EldritchRealmsBlocks.MARRED_SOIL);
                 addDrop(EldritchRealmsBlocks.TILLED_MARRED_SOIL, drops(EldritchRealmsBlocks.MARRED_SOIL));
@@ -234,60 +169,87 @@ public class EldritchRealmsLootTableProvider extends FabricBlockLootTableProvide
                 addDrop(EldritchRealmsBlocks.VIRELUME_GRASS, eldritchGrassDrops(EldritchRealmsBlocks.VIRELUME_GRASS));
                 addDrop(EldritchRealmsBlocks.TALL_VIRELUME_GRASS, tallEldritchGrassDrops(EldritchRealmsBlocks.TALL_VIRELUME_GRASS, EldritchRealmsBlocks.TALL_VIRELUME_GRASS));
 
+                /// Gravel ///
                 addDrop(EldritchRealmsBlocks.EERIE_GRAVEL);
 
+                /// Astral Sand ///
                 addDrop(EldritchRealmsBlocks.ASTRAL_SAND);
-                addDrop(EldritchRealmsBlocks.ASTRAL_SANDSTONE);
-                addDrop(EldritchRealmsBlocks.ASTRAL_SANDSTONE_SLAB, slabDrops(EldritchRealmsBlocks.ASTRAL_SANDSTONE_SLAB));
-                addDrop(EldritchRealmsBlocks.ASTRAL_SANDSTONE_STAIRS);
-                addDrop(EldritchRealmsBlocks.ASTRAL_SANDSTONE_WALL);
-                addDrop(EldritchRealmsBlocks.ASTRAL_SANDSTONE_BRICKS);
-                addDrop(EldritchRealmsBlocks.ASTRAL_SANDSTONE_BRICK_SLAB, slabDrops(EldritchRealmsBlocks.ASTRAL_SANDSTONE_BRICK_SLAB));
-                addDrop(EldritchRealmsBlocks.ASTRAL_SANDSTONE_BRICK_STAIRS);
-                addDrop(EldritchRealmsBlocks.ASTRAL_SANDSTONE_BRICK_WALL);
-                addDrop(EldritchRealmsBlocks.SMOOTH_ASTRAL_SANDSTONE);
-                addDrop(EldritchRealmsBlocks.SMOOTH_ASTRAL_SANDSTONE_SLAB, slabDrops(EldritchRealmsBlocks.SMOOTH_ASTRAL_SANDSTONE_SLAB));
-                addDrop(EldritchRealmsBlocks.SMOOTH_ASTRAL_SANDSTONE_STAIRS);
-                addDrop(EldritchRealmsBlocks.SMOOTH_ASTRAL_SANDSTONE_WALL);
+                addStoneFamilyDrops(EldritchRealmsBlocks.ASTRAL_SANDSTONE, EldritchRealmsBlocks.ASTRAL_SANDSTONE_STAIRS, EldritchRealmsBlocks.ASTRAL_SANDSTONE_SLAB, EldritchRealmsBlocks.ASTRAL_SANDSTONE_WALL);
+                addStoneFamilyDrops(EldritchRealmsBlocks.ASTRAL_SANDSTONE_BRICKS, EldritchRealmsBlocks.ASTRAL_SANDSTONE_BRICK_STAIRS, EldritchRealmsBlocks.ASTRAL_SANDSTONE_BRICK_SLAB, EldritchRealmsBlocks.ASTRAL_SANDSTONE_BRICK_WALL);
+                addStoneFamilyDrops(EldritchRealmsBlocks.SMOOTH_ASTRAL_SANDSTONE, EldritchRealmsBlocks.SMOOTH_ASTRAL_SANDSTONE_STAIRS, EldritchRealmsBlocks.SMOOTH_ASTRAL_SANDSTONE_SLAB, EldritchRealmsBlocks.SMOOTH_ASTRAL_SANDSTONE_WALL);
 
-
+                /// Flowers ///
                 addDrop(EldritchRealmsBlocks.SABLEBELL);
                 addDrop(EldritchRealmsBlocks.PHONTUM_PETALS, flowerbedDrops(EldritchRealmsBlocks.PHONTUM_PETALS));
 
+                /// Crops ///
                 BlockStatePropertyLootCondition.Builder builder = BlockStatePropertyLootCondition.builder(EldritchRealmsBlocks.ALK_WHEAT).properties(StatePredicate.Builder.create()
                         .exactMatch(AlkWheatCropBlock.AGE, 7));
                 addDrop(EldritchRealmsBlocks.ALK_WHEAT, cropDrops(EldritchRealmsBlocks.ALK_WHEAT, EldritchRealmsItems.ALK_WHEAT, EldritchRealmsItems.ALK_WHEAT_SEEDS, builder));
 
 
+                /*
+                 * ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                 *
+                 *   MATERIAL DROPS
+                 *
+                 * ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                 */
+
+                /// Gloomarble ///
+                addDrop(EldritchRealmsBlocks.GLOOMARBLE, sevenToNineDrops(EldritchRealmsBlocks.GLOOMARBLE, EldritchRealmsItems.GLOOMARBLE_DUST));
+
+                /// Dreadquartz ///
+                addDrop(EldritchRealmsBlocks.VEILSTONE_DREADQUARTZ_ORE, twoToFiveDrops(EldritchRealmsBlocks.VEILSTONE_DREADQUARTZ_ORE, EldritchRealmsItems.DREADQUARTZ));
+                addDrop(EldritchRealmsBlocks.SHADOWSLATE_DREADQUARTZ_ORE, twoToFiveDrops(EldritchRealmsBlocks.SHADOWSLATE_DREADQUARTZ_ORE, EldritchRealmsItems.DREADQUARTZ));
+                addStoneFamilyDrops(EldritchRealmsBlocks.DREADQUARTZ_BLOCK, EldritchRealmsBlocks.DREADQUARTZ_STAIRS, EldritchRealmsBlocks.DREADQUARTZ_SLAB, EldritchRealmsBlocks.DREADQUARTZ_WALL);
+                addStoneFamilyDrops(EldritchRealmsBlocks.DREADQUARTZ_BRICKS, EldritchRealmsBlocks.DREADQUARTZ_BRICK_STAIRS, EldritchRealmsBlocks.DREADQUARTZ_BRICK_SLAB, EldritchRealmsBlocks.DREADQUARTZ_BRICK_WALL);
+                addStoneFamilyDrops(EldritchRealmsBlocks.SMOOTH_DREADQUARTZ, EldritchRealmsBlocks.SMOOTH_DREADQUARTZ_STAIRS, EldritchRealmsBlocks.SMOOTH_DREADQUARTZ_SLAB, EldritchRealmsBlocks.SMOOTH_DREADQUARTZ_WALL);
+                addDrop(EldritchRealmsBlocks.SMOOTH_DREADQUARTZ_STAIRS);
+                addDrop(EldritchRealmsBlocks.SMOOTH_DREADQUARTZ_SLAB, slabDrops(EldritchRealmsBlocks.SMOOTH_DREADQUARTZ_SLAB));
+                addDrop(EldritchRealmsBlocks.SMOOTH_DREADQUARTZ_WALL);
+                addDrop(EldritchRealmsBlocks.DREADQUARTZ_PILLAR);
+                addDrop(EldritchRealmsBlocks.CHISELED_DREADQUARTZ);
+
+                /// Shadowsteel ///
                 addDrop(EldritchRealmsBlocks.VEILSTONE_SHADOWSTEEL_ORE, oneToTwoDropsNoSilkTouch(EldritchRealmsBlocks.VEILSTONE_SHADOWSTEEL_ORE, EldritchRealmsItems.SHADOWSTEEL_DUST));
                 addDrop(EldritchRealmsBlocks.SHADOWSLATE_SHADOWSTEEL_ORE, oneToTwoDropsNoSilkTouch(EldritchRealmsBlocks.SHADOWSLATE_SHADOWSTEEL_ORE, EldritchRealmsItems.SHADOWSTEEL_DUST));
                 addDrop(EldritchRealmsBlocks.SHADOWSTEEL_BLOCK);
 
+                /// Enigmatic Iron ///
+                addDrop(EldritchRealmsBlocks.VEILSTONE_ENIGMATIC_IRON_ORE, oneToTwoDropsNoSilkTouch(EldritchRealmsBlocks.VEILSTONE_ENIGMATIC_IRON_ORE, EldritchRealmsItems.ENIGMATIC_IRON_NUGGET));
+                addDrop(EldritchRealmsBlocks.SHADOWSLATE_ENIGMATIC_IRON_ORE, oneToTwoDropsNoSilkTouch(EldritchRealmsBlocks.SHADOWSLATE_ENIGMATIC_IRON_ORE, EldritchRealmsItems.ENIGMATIC_IRON_NUGGET));
+                addDrop(EldritchRealmsBlocks.ENIGMATIC_IRON_BLOCK);
 
+                /// Nebulatic Lapis ///
                 addDrop(EldritchRealmsBlocks.NEBULATIC_LAPIS_BLOCK);
                 addDrop(EldritchRealmsBlocks.VEILSTONE_NEBULATIC_LAPIS_ORE, twoToFiveDrops(EldritchRealmsBlocks.VEILSTONE_NEBULATIC_LAPIS_ORE, EldritchRealmsItems.NEBULATIC_LAPIS));
                 addDrop(EldritchRealmsBlocks.SHADOWSLATE_NEBULATIC_LAPIS_ORE, twoToFiveDrops(EldritchRealmsBlocks.SHADOWSLATE_NEBULATIC_LAPIS_ORE, EldritchRealmsItems.NEBULATIC_LAPIS));
                 addDrop(EldritchRealmsBlocks.NEBULATIC_ENCHANTING_TABLE);
 
+                /// Enigma Basalt ///
                 addDrop(EldritchRealmsBlocks.ENIGMA_BASALT);
                 addDrop(EldritchRealmsBlocks.POLISHED_ENIGMA_BASALT);
-                addDrop(EldritchRealmsBlocks.SMOOTH_ENIGMA_BASALT);
-                addDrop(EldritchRealmsBlocks.SMOOTH_ENIGMA_BASALT_STAIRS);
-                addDrop(EldritchRealmsBlocks.SMOOTH_ENIGMA_BASALT_SLAB, slabDrops(EldritchRealmsBlocks.SMOOTH_ENIGMA_BASALT_SLAB));
-                addDrop(EldritchRealmsBlocks.SMOOTH_ENIGMA_BASALT_WALL);
-                addDrop(EldritchRealmsBlocks.SMOOTH_ENIGMA_BASALT_BRICKS);
-                addDrop(EldritchRealmsBlocks.SMOOTH_ENIGMA_BASALT_BRICK_STAIRS);
-                addDrop(EldritchRealmsBlocks.SMOOTH_ENIGMA_BASALT_BRICK_SLAB, slabDrops(EldritchRealmsBlocks.SMOOTH_ENIGMA_BASALT_BRICK_SLAB));
-                addDrop(EldritchRealmsBlocks.SMOOTH_ENIGMA_BASALT_BRICK_WALL);
+                addStoneFamilyDrops(EldritchRealmsBlocks.SMOOTH_ENIGMA_BASALT, EldritchRealmsBlocks.SMOOTH_ENIGMA_BASALT_STAIRS, EldritchRealmsBlocks.SMOOTH_ENIGMA_BASALT_SLAB, EldritchRealmsBlocks.SMOOTH_ENIGMA_BASALT_WALL);
+                addStoneFamilyDrops(EldritchRealmsBlocks.SMOOTH_ENIGMA_BASALT_BRICKS, EldritchRealmsBlocks.SMOOTH_ENIGMA_BASALT_BRICK_STAIRS, EldritchRealmsBlocks.SMOOTH_ENIGMA_BASALT_BRICK_SLAB, EldritchRealmsBlocks.SMOOTH_ENIGMA_BASALT_BRICK_WALL);
 
+                /// Eclipsium ///
                 addDrop(EldritchRealmsBlocks.VEILSTONE_ECLIPSIUM_ORE, silkTouchItemDrop(EldritchRealmsBlocks.VEILSTONE_ECLIPSIUM_ORE, EldritchRealmsItems.ECLIPSIUM));
                 addDrop(EldritchRealmsBlocks.SHADOWSLATE_ECLIPSIUM_ORE, silkTouchItemDrop(EldritchRealmsBlocks.SHADOWSLATE_ECLIPSIUM_ORE, EldritchRealmsItems.ECLIPSIUM));
                 addDrop(EldritchRealmsBlocks.ECLIPSIUM_BLOCK);
 
+                /// Hallow Gold ///
                 addDrop(EldritchRealmsBlocks.HALLOW_GOLD_BLOCK);
-                addDrop(EldritchRealmsBlocks.SHADOWSLATE_HALLOW_GOLD_ORE, silkTouchItemDrop(EldritchRealmsBlocks.SHADOWSLATE_HALLOW_GOLD_ORE, EldritchRealmsItems.HALLOW_GOLD_CLUMP));
-                addDrop(EldritchRealmsBlocks.VEILSTONE_HALLOW_GOLD_ORE, silkTouchItemDrop(EldritchRealmsBlocks.VEILSTONE_HALLOW_GOLD_ORE, EldritchRealmsItems.HALLOW_GOLD_CLUMP));
+                addDrop(EldritchRealmsBlocks.SHADOWSLATE_HALLOW_GOLD_ORE, silkTouchItemDrop(EldritchRealmsBlocks.SHADOWSLATE_HALLOW_GOLD_ORE, EldritchRealmsItems.HALLOW_GOLD_NUGGET));
+                addDrop(EldritchRealmsBlocks.VEILSTONE_HALLOW_GOLD_ORE, silkTouchItemDrop(EldritchRealmsBlocks.VEILSTONE_HALLOW_GOLD_ORE, EldritchRealmsItems.HALLOW_GOLD_NUGGET));
 
+    }
+
+    private void addStoneFamilyDrops(Block base, Block stairs, Block slab, Block wall) {
+        addDrop(base);
+        addDrop(stairs);
+        addDrop(slab, slabDrops(slab));
+        addDrop(wall);
     }
 
     public LootTable.Builder silkTouchDrop(Block drop, Block block) {

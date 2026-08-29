@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_enigmatic_iron_nugget": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "eldritchrealms:enigmatic_iron_nugget"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "eldritchrealms:enigmatic_iron_clump"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_enigmatic_iron_nugget",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "eldritchrealms:enigmatic_iron_clump"
+    ]
+  },
+  "sends_telemetry_event": false
+}

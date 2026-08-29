@@ -39,4 +39,13 @@ public class EldritchRealmsTags {
         }
     }
 
+    public static class Fluids {
+        public static final TagKey<net.minecraft.fluid.Fluid> EERIE_WATER =
+                createTag("eerie_water");
+
+        private static TagKey<net.minecraft.fluid.Fluid> createTag(String name) {
+            return TagKey.of(RegistryKeys.FLUID, new Identifier(EldritchRealms.MOD_ID, name));
+        }
+    }
+
 }

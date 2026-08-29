@@ -20,6 +20,8 @@ public class EldritchRealmsBlockTagProvider extends FabricTagProvider.BlockTagPr
     @Override
     protected void configure(RegistryWrapper.WrapperLookup arg) {
 
+
+
         getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
                 .add(EldritchRealmsBlocks.SHADOWSLATE)
                 .add(EldritchRealmsBlocks.SHADOWSLATE_SLAB)
@@ -64,6 +66,7 @@ public class EldritchRealmsBlockTagProvider extends FabricTagProvider.BlockTagPr
                 .add(EldritchRealmsBlocks.SMOOTH_ENIGMA_BASALT_BRICK_STAIRS)
                 .add(EldritchRealmsBlocks.SMOOTH_ENIGMA_BASALT_BRICK_SLAB)
                 .add(EldritchRealmsBlocks.SMOOTH_ENIGMA_BASALT_BRICK_WALL)
+                .add(EldritchRealmsBlocks.ECLIPSIUM_BLOCK)
 
 
         ;
@@ -73,7 +76,7 @@ public class EldritchRealmsBlockTagProvider extends FabricTagProvider.BlockTagPr
                 .add(EldritchRealmsBlocks.SHADOWSLATE_DREADQUARTZ_ORE)
                 .add(EldritchRealmsBlocks.NEBULATIC_LAPIS_BLOCK)
 
-                .add(EldritchRealmsBlocks.ECLIPSIUM_BLOCK)
+                .add(EldritchRealmsBlocks.ENIGMATIC_IRON_BLOCK)
                 .add(EldritchRealmsBlocks.VEILSTONE_ECLIPSIUM_ORE)
                 .add(EldritchRealmsBlocks.SHADOWSLATE_ECLIPSIUM_ORE)
 
@@ -85,6 +88,8 @@ public class EldritchRealmsBlockTagProvider extends FabricTagProvider.BlockTagPr
                 .add(EldritchRealmsBlocks.SHADOWSTEEL_BLOCK)
                 .add(EldritchRealmsBlocks.VEILSTONE_NEBULATIC_LAPIS_ORE)
                 .add(EldritchRealmsBlocks.SHADOWSLATE_NEBULATIC_LAPIS_ORE)
+                .add(EldritchRealmsBlocks.VEILSTONE_ENIGMATIC_IRON_ORE)
+                .add(EldritchRealmsBlocks.SHADOWSLATE_ENIGMATIC_IRON_ORE)
 
         ;
 
@@ -182,6 +187,10 @@ public class EldritchRealmsBlockTagProvider extends FabricTagProvider.BlockTagPr
                 .add(EldritchRealmsBlocks.SHADOWSTEEL_BLOCK)
                 .add(EldritchRealmsBlocks.VEILSTONE_SHADOWSTEEL_ORE)
                 .add(EldritchRealmsBlocks.SHADOWSLATE_SHADOWSTEEL_ORE)
+
+                .add(EldritchRealmsBlocks.ENIGMATIC_IRON_BLOCK)
+                .add(EldritchRealmsBlocks.VEILSTONE_ENIGMATIC_IRON_ORE)
+                .add(EldritchRealmsBlocks.SHADOWSLATE_ENIGMATIC_IRON_ORE)
 
                 .add(EldritchRealmsBlocks.HALLOW_GOLD_BLOCK)
                 .add(EldritchRealmsBlocks.VEILSTONE_HALLOW_GOLD_ORE)

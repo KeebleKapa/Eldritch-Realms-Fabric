@@ -35,12 +35,52 @@ public class EldritchRealmsPlacedFeatures {
 
     public static final RegistryKey<PlacedFeature> DREADQUARTZ_ORE_PLACED_KEY = registryKey("dreadquartz_ore_placed");
     public static final RegistryKey<PlacedFeature> SHADOWSTEEL_ORE_PLACED_KEY = registryKey("shadowsteel_ore_placed");
+    public static final RegistryKey<PlacedFeature> ENIGMATIC_IRON_ORE_PLACED_KEY = registryKey("enigmatic_iron_ore_placed");
     public static final RegistryKey<PlacedFeature> NEBULATIC_LAPIS_ORE_PLACED_KEY = registryKey("nebulatic_lapis_ore_placed");
     public static final RegistryKey<PlacedFeature> ECLIPSIUM_ORE_PLACED_KEY = registryKey("eclipsium_ore_placed");
     public static final RegistryKey<PlacedFeature> HALLOW_GOLD_ORE_PLACED_KEY = registryKey("hallow_gold_ore_placed");
 
+    public static final RegistryKey<PlacedFeature> PHONTUM_LAKE_PLACED_KEY = registryKey("phontum_lake_placed");
+    public static final RegistryKey<PlacedFeature> ELDEM_LAKE_PLACED_KEY = registryKey("eldem_lake_placed");
+
     public static void bootstrap(Registerable<PlacedFeature> context) {
         var configuredFeatureRegistryEntryLookup = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
+
+
+        // Eerie Water Lakes
+        PlacedFeatures.register(
+                context,
+                PHONTUM_LAKE_PLACED_KEY,
+
+                configuredFeatureRegistryEntryLookup.getOrThrow(
+                        EldritchRealmsConfiguredFeatures.PHONTUM_LAKE_KEY
+                ),
+
+                RarityFilterPlacementModifier.of(50),
+
+                SquarePlacementModifier.of(),
+
+                PlacedFeatures.WORLD_SURFACE_WG_HEIGHTMAP,
+
+                BiomePlacementModifier.of()
+        );
+        PlacedFeatures.register(
+                context,
+                ELDEM_LAKE_PLACED_KEY,
+
+                configuredFeatureRegistryEntryLookup.getOrThrow(
+                        EldritchRealmsConfiguredFeatures.ELDEM_LAKE_KEY
+                ),
+
+                RarityFilterPlacementModifier.of(50),
+
+                SquarePlacementModifier.of(),
+
+                PlacedFeatures.WORLD_SURFACE_WG_HEIGHTMAP,
+
+                BiomePlacementModifier.of()
+        );
+
 
         // Trees
         register(context, UMBRAM_OAK_PLACED_KEY,
@@ -132,24 +172,44 @@ public class EldritchRealmsPlacedFeatures {
 
         // Ores
         register(context, DREADQUARTZ_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(EldritchRealmsConfiguredFeatures.DREADQUARTZ_ORE_KEY),
-                EldritchRealmsOrePlacement.modifiersWithCount(48,
-                        HeightRangePlacementModifier.uniform(YOffset.fixed(-48), YOffset.fixed(128))));
-
-        register(context, SHADOWSTEEL_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(EldritchRealmsConfiguredFeatures.SHADOWSTEEL_ORE_KEY),
-                EldritchRealmsOrePlacement.modifiersWithCount(7,
-                        HeightRangePlacementModifier.uniform(YOffset.fixed(-64), YOffset.fixed(128))));
+                EldritchRealmsOrePlacement.modifiersWithCount(32,
+                        HeightRangePlacementModifier.uniform(YOffset.fixed(-32), YOffset.fixed(128))));
 
         register(context, NEBULATIC_LAPIS_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(EldritchRealmsConfiguredFeatures.NEBULATIC_LAPIS_ORE_KEY),
                 EldritchRealmsOrePlacement.modifiersWithCount(32,
                         HeightRangePlacementModifier.uniform(YOffset.fixed(-56), YOffset.fixed(128))));
 
+        register(context, HALLOW_GOLD_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(EldritchRealmsConfiguredFeatures.HALLOW_GOLD_ORE_KEY),
+                EldritchRealmsOrePlacement.modifiersWithCount(5,
+                        HeightRangePlacementModifier.uniform(YOffset.fixed(-64), YOffset.fixed(128))));
+
         register(context, ECLIPSIUM_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(EldritchRealmsConfiguredFeatures.ECLIPSIUM_ORE_KEY),
                 EldritchRealmsOrePlacement.modifiersWithCount(16,
                         HeightRangePlacementModifier.uniform(YOffset.fixed(-56), YOffset.fixed(128))));
 
-        register(context, HALLOW_GOLD_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(EldritchRealmsConfiguredFeatures.HALLOW_GOLD_ORE_KEY),
-                EldritchRealmsOrePlacement.modifiersWithCount(5,
+        register(context, SHADOWSTEEL_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(EldritchRealmsConfiguredFeatures.SHADOWSTEEL_ORE_KEY),
+                EldritchRealmsOrePlacement.modifiersWithCount(7,
                         HeightRangePlacementModifier.uniform(YOffset.fixed(-64), YOffset.fixed(128))));
+
+        register(context, ENIGMATIC_IRON_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(EldritchRealmsConfiguredFeatures.ENIGMATIC_IRON_ORE_KEY),
+                EldritchRealmsOrePlacement.modifiersWithCount(8,
+                        HeightRangePlacementModifier.uniform(YOffset.fixed(-48), YOffset.fixed(48))));
+
+//        register(context, VOIDSTONE_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(EldritchRealmsConfiguredFeatures.VOIDSTONE_ORE_KEY),
+//                EldritchRealmsOrePlacement.modifiersWithCount(3,
+//                        HeightRangePlacementModifier.uniform(YOffset.fixed(-64), YOffset.fixed(0))));
+//
+//        register(context, PHANTOMITE_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(EldritchRealmsConfiguredFeatures.PHANTOMITE_ORE_KEY),
+//                EldritchRealmsOrePlacement.modifiersWithCount(2,
+//                        HeightRangePlacementModifier.uniform(YOffset.fixed(-64), YOffset.fixed(-16))));
+//
+//        register(context, ETHEREALITE_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(EldritchRealmsConfiguredFeatures.ETHEREALITE_ORE_KEY),
+//                EldritchRealmsOrePlacement.modifiersWithCount(1,
+//                        HeightRangePlacementModifier.uniform(YOffset.fixed(-64), YOffset.fixed(-40))));
+//
+//        register(context, ELDRITCH_ESSENCE_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(EldritchRealmsConfiguredFeatures.ELDRITCH_ESSENCE_ORE_KEY),
+//                EldritchRealmsOrePlacement.modifiersWithCount(1,
+//                        HeightRangePlacementModifier.uniform(YOffset.fixed(-64), YOffset.fixed(32))));
     }
 
     public static RegistryKey<PlacedFeature> registryKey(String name) {

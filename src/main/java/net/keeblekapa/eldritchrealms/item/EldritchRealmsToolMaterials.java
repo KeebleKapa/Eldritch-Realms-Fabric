@@ -11,8 +11,11 @@ public enum EldritchRealmsToolMaterials implements ToolMaterial {
     SHADOWSTEEL("shadowsteel", 5, 2560, 9.5f, 4.5f, 18,
             () -> Ingredient.ofItems(EldritchRealmsItems.SHADOWSTEEL_INGOT)),
 
-    HALLOW_GOLD("hallow_gold", 4, 640, 13.5f, 3.5f, 26,
-            () -> Ingredient.ofItems(EldritchRealmsItems.HALLOW_GOLD_INGOT))
+    HALLOW_GOLD("hallow_gold", 3, 640, 20.0f, 3.5f, 26,
+            () -> Ingredient.ofItems(EldritchRealmsItems.HALLOW_GOLD_INGOT)),
+
+    ENIGMATIC_IRON("enigmatic_iron", 4, 1532, 9.0f, 4.0f, 18,
+            () -> Ingredient.ofItems(EldritchRealmsItems.ENIGMATIC_IRON_INGOT))
 
     ;
 

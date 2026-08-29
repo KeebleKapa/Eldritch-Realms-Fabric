@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "leggings",
+  "key": {
+    "#": {
+      "item": "eldritchrealms:enigmatic_iron_ingot"
+    }
+  },
+  "pattern": [
+    "###",
+    "# #",
+    "# #"
+  ],
+  "result": {
+    "item": "eldritchrealms:enigmatic_iron_leggings"
+  },
+  "show_notification": true
+}

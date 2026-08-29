@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "axe",
+  "key": {
+    "#": {
+      "item": "eldritchrealms:enigmatic_iron_ingot"
+    },
+    "$": {
+      "item": "eldritchrealms:reinforced_iron_rod"
+    }
+  },
+  "pattern": [
+    "##",
+    "#$",
+    " $"
+  ],
+  "result": {
+    "item": "eldritchrealms:enigmatic_iron_axe"
+  },
+  "show_notification": true
+}

@@ -43,30 +43,36 @@ public class EldritchRealmsItemTagProvider extends FabricTagProvider.ItemTagProv
 
         getOrCreateTagBuilder(ItemTags.SWORDS)
                 .add(EldritchRealmsItems.SHADOWSTEEL_SWORD)
+                .add(EldritchRealmsItems.ENIGMATIC_IRON_SWORD)
                 .add(EldritchRealmsItems.HALLOW_GOLD_SWORD)
         ;
         getOrCreateTagBuilder(ItemTags.SHOVELS)
                 .add(EldritchRealmsItems.SHADOWSTEEL_SHOVEL)
+                .add(EldritchRealmsItems.ENIGMATIC_IRON_SHOVEL)
                 .add(EldritchRealmsItems.HALLOW_GOLD_SHOVEL)
 
         ;
         getOrCreateTagBuilder(ItemTags.PICKAXES)
                 .add(EldritchRealmsItems.SHADOWSTEEL_PICKAXE)
+                .add(EldritchRealmsItems.ENIGMATIC_IRON_PICKAXE)
                 .add(EldritchRealmsItems.HALLOW_GOLD_PICKAXE)
 
         ;
         getOrCreateTagBuilder(ItemTags.AXES)
                 .add(EldritchRealmsItems.SHADOWSTEEL_AXE)
+                .add(EldritchRealmsItems.ENIGMATIC_IRON_AXE)
                 .add(EldritchRealmsItems.HALLOW_GOLD_AXE)
 
         ;
         getOrCreateTagBuilder(ItemTags.HOES)
                 .add(EldritchRealmsItems.SHADOWSTEEL_HOE)
+                .add(EldritchRealmsItems.ENIGMATIC_IRON_HOE)
                 .add(EldritchRealmsItems.HALLOW_GOLD_HOE)
 
         ;
         getOrCreateTagBuilder(ItemTags.TRIMMABLE_ARMOR)
                 .add(EldritchRealmsItems.SHADOWSTEEL_HELMET, EldritchRealmsItems.SHADOWSTEEL_CHESTPLATE, EldritchRealmsItems.SHADOWSTEEL_LEGGINGS, EldritchRealmsItems.SHADOWSTEEL_BOOTS)
+                .add(EldritchRealmsItems.ENIGMATIC_IRON_HELMET, EldritchRealmsItems.ENIGMATIC_IRON_CHESTPLATE, EldritchRealmsItems.ENIGMATIC_IRON_LEGGINGS, EldritchRealmsItems.ENIGMATIC_IRON_BOOTS)
                 .add(EldritchRealmsItems.HALLOW_GOLD_HELMET, EldritchRealmsItems.HALLOW_GOLD_CHESTPLATE, EldritchRealmsItems.HALLOW_GOLD_LEGGINGS, EldritchRealmsItems.HALLOW_GOLD_BOOTS)
 
 

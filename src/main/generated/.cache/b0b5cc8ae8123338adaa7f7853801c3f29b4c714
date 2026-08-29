@@ -1,9 +1,9 @@
-// 1.20.1	2026-08-22T15:42:55.3635156	Eldritch Realms/Tags for minecraft:item
+// 1.20.1	2026-08-29T17:58:50.8716977	Eldritch Realms/Tags for minecraft:item
 cb9b1ca2b32308c0e2722f66461ea1472bf55dd3 data\minecraft\tags\items\planks.json
-c51d193d4cee7886187ba53735f9c16f6468f8c7 data\minecraft\tags\items\axes.json
-b09fda0008e17fc94f6c57db0cbf497217141482 data\minecraft\tags\items\shovels.json
+4b15f683bb9c7b5bf903658ad1cf377d830004d2 data\minecraft\tags\items\axes.json
+cc2d54076eda46739f0de6700d1ceb9321684d57 data\minecraft\tags\items\shovels.json
 1ce816169dffd67c8e41ce1069568a6e25744f5f data\minecraft\tags\items\logs_that_burn.json
-db12e08ab5d7349b6e776ea259ffedd8ffdfc8d2 data\minecraft\tags\items\trimmable_armor.json
-fb699de7e16262153624dd027161bf3053ce91d5 data\minecraft\tags\items\pickaxes.json
-a59d1c5afc697ddb4dccb93b7d705b73478631b2 data\minecraft\tags\items\swords.json
-b0ac74181b791a862b19609b11d2912e63744abe data\minecraft\tags\items\hoes.json
+9732652cb3f57efd9be1d4340215fa55a17de1f0 data\minecraft\tags\items\trimmable_armor.json
+03a0039d22e8eb4c7d85cb1583202f6d7c701fc9 data\minecraft\tags\items\swords.json
+c4c747c82fbbc7b5edf7960c7177dcdac3aa4b30 data\minecraft\tags\items\pickaxes.json
+df5165d69b6c0dd8910887655643da753e93228d data\minecraft\tags\items\hoes.json

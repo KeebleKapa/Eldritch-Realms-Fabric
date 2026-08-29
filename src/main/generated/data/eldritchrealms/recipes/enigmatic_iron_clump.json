@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "eldritchrealms:enigmatic_iron_nugget"
+    },
+    {
+      "item": "eldritchrealms:enigmatic_iron_nugget"
+    },
+    {
+      "item": "eldritchrealms:enigmatic_iron_nugget"
+    },
+    {
+      "item": "eldritchrealms:enigmatic_iron_nugget"
+    },
+    {
+      "item": "eldritchrealms:enigmatic_iron_nugget"
+    },
+    {
+      "item": "eldritchrealms:enigmatic_iron_nugget"
+    },
+    {
+      "item": "eldritchrealms:enigmatic_iron_nugget"
+    },
+    {
+      "item": "eldritchrealms:enigmatic_iron_nugget"
+    },
+    {
+      "item": "eldritchrealms:enigmatic_iron_nugget"
+    }
+  ],
+  "result": {
+    "item": "eldritchrealms:enigmatic_iron_clump"
+  }
+}

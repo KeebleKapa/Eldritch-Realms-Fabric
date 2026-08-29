@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.keeblekapa.eldritchrealms.EldritchRealms;
 import net.keeblekapa.eldritchrealms.block.custom.AlkWheatCropBlock;
+import net.keeblekapa.eldritchrealms.block.custom.EerieWaterBlock;
 import net.keeblekapa.eldritchrealms.sound.EldritchRealmsSounds;
 import net.keeblekapa.eldritchrealms.util.EldritchRealmsTags;
 import net.keeblekapa.eldritchrealms.world.tree.EldemSaplingGenerator;
@@ -451,6 +452,13 @@ public class EldritchRealmsBlocks {
     // Gantix Silver (Stronger Than E-Iron)
 
     // Enigmatic Iron (Stronger than Diamond)
+    public static final Block VEILSTONE_ENIGMATIC_IRON_ORE = registerBlock("veilstone_enigmatic_iron_ore",
+            new Block(FabricBlockSettings.copyOf(VEILSTONE).strength(3f, 7f)));
+    public static final Block SHADOWSLATE_ENIGMATIC_IRON_ORE = registerBlock("shadowslate_enigmatic_iron_ore",
+            new Block(FabricBlockSettings.copyOf(SHADOWSLATE).strength(4.75f, 11f)));
+
+    public static final Block ENIGMATIC_IRON_BLOCK = registerBlock("enigmatic_iron_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
 
 
     //--------------------------------------------------------
@@ -1244,6 +1252,17 @@ public class EldritchRealmsBlocks {
 
 
 
+    // Liquid Blocks //
+    public static final Block EERIE_WATER = registerBlockWithoutItem(
+            "eerie_water",
+            new EerieWaterBlock(
+                    EldritchRealmsFluids.STILL_EERIE_WATER,
+                    FabricBlockSettings.copyOf(Blocks.WATER)
+            )
+    );
+
+
+
     //    Flowers    //
     public static final Block SABLEBELL = registerBlock("sablebell",
             new FlowerBlock(StatusEffects.MINING_FATIGUE, 10, FabricBlockSettings.copyOf(Blocks.POPPY)) {
@@ -1426,6 +1445,14 @@ public class EldritchRealmsBlocks {
     private static Item registerBlockItem(String name, Block block) {
         return Registry.register(Registries.ITEM, new Identifier(EldritchRealms.MOD_ID, name),
                 new BlockItem(block, new FabricItemSettings()));
+    }
+
+    private static Block registerBlockWithoutItem(String name, Block block) {
+        return Registry.register(
+                Registries.BLOCK,
+                new Identifier(EldritchRealms.MOD_ID, name),
+                block
+        );
     }
 
     public static void registerBlocks() {

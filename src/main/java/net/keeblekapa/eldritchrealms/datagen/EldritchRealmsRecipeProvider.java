@@ -853,6 +853,23 @@ public class EldritchRealmsRecipeProvider extends FabricRecipeProvider {
                 EldritchRealmsItems.HALLOW_GOLD_HELMET, EldritchRealmsItems.HALLOW_GOLD_CHESTPLATE, EldritchRealmsItems.HALLOW_GOLD_LEGGINGS, EldritchRealmsItems.HALLOW_GOLD_BOOTS);
 
 
+        // Enigmatic Iron Recipes
+
+        offerSmelting(exporter, List.of(EldritchRealmsBlocks.VEILSTONE_ENIGMATIC_IRON_ORE), RecipeCategory.MISC, EldritchRealmsItems.ENIGMATIC_IRON_NUGGET, 3f, 300, "enigmatic_iron_nugget_from_veilstone_ore_smelting");
+        offerBlasting(exporter, List.of(EldritchRealmsBlocks.VEILSTONE_ENIGMATIC_IRON_ORE), RecipeCategory.MISC, EldritchRealmsItems.ENIGMATIC_IRON_NUGGET, 3f, 150, "enigmatic_iron_nugget_from_veilstone_ore_blasting");
+        offerSmelting(exporter, List.of(EldritchRealmsBlocks.SHADOWSLATE_ENIGMATIC_IRON_ORE), RecipeCategory.MISC, EldritchRealmsItems.ENIGMATIC_IRON_NUGGET, 3f, 300, "enigmatic_iron_nugget_from_shadowslate_ore_smelting");
+        offerBlasting(exporter, List.of(EldritchRealmsBlocks.SHADOWSLATE_ENIGMATIC_IRON_ORE), RecipeCategory.MISC, EldritchRealmsItems.ENIGMATIC_IRON_NUGGET, 3f, 150, "enigmatic_iron_nugget_from_shadowslate_ore_blasting");
+
+        offerSmelting(exporter, List.of(EldritchRealmsItems.ENIGMATIC_IRON_CLUMP), RecipeCategory.MISC, EldritchRealmsItems.ENIGMATIC_IRON_INGOT, 3f, 300, "enigmatic_iron_ingot_smelting");
+        offerBlasting(exporter, List.of(EldritchRealmsItems.ENIGMATIC_IRON_CLUMP), RecipeCategory.MISC, EldritchRealmsItems.ENIGMATIC_IRON_INGOT, 3f, 150, "enigmatic_iron_ingot_blasting");
+
+        offerCompactingRecipe(exporter, RecipeCategory.MISC, EldritchRealmsItems.ENIGMATIC_IRON_CLUMP, EldritchRealmsItems.ENIGMATIC_IRON_NUGGET);
+
+        offerFullEquipmentRecipePack(exporter, EldritchRealmsItems.ENIGMATIC_IRON_INGOT, EldritchRealmsItems.REINFORCED_IRON_ROD, EldritchRealmsItems.ENIGMATIC_IRON_SWORD,
+                EldritchRealmsItems.ENIGMATIC_IRON_PICKAXE, EldritchRealmsItems.ENIGMATIC_IRON_AXE, EldritchRealmsItems.ENIGMATIC_IRON_SHOVEL, EldritchRealmsItems.ENIGMATIC_IRON_HOE,
+                EldritchRealmsItems.ENIGMATIC_IRON_HELMET, EldritchRealmsItems.ENIGMATIC_IRON_CHESTPLATE, EldritchRealmsItems.ENIGMATIC_IRON_LEGGINGS, EldritchRealmsItems.ENIGMATIC_IRON_BOOTS);
+
+
         //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, Blocks.IRON_BARS, 4)

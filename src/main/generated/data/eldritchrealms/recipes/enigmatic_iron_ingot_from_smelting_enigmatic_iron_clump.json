@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 300,
+  "experience": 3.0,
+  "group": "enigmatic_iron_ingot_smelting",
+  "ingredient": {
+    "item": "eldritchrealms:enigmatic_iron_clump"
+  },
+  "result": "eldritchrealms:enigmatic_iron_ingot"
+}

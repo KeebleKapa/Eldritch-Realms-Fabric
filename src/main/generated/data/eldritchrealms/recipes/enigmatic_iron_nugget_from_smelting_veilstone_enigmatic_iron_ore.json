@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 300,
+  "experience": 3.0,
+  "group": "enigmatic_iron_nugget_from_veilstone_ore_smelting",
+  "ingredient": {
+    "item": "eldritchrealms:veilstone_enigmatic_iron_ore"
+  },
+  "result": "eldritchrealms:enigmatic_iron_nugget"
+}

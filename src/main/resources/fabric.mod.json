@@ -39,7 +39,7 @@
 		"minecraft": "~1.20.1",
 		"java": ">=17",
 		"fabric-api": "*",
-        "terrablender": "3.0.1.7"
+        "terrablender": ">=3.0.1.7"
 	},
 	"suggests": {
         "emi": ">=1.1.22",

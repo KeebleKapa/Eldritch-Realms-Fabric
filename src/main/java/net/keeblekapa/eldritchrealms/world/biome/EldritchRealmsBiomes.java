@@ -26,15 +26,25 @@ public class EldritchRealmsBiomes {
             new Identifier(EldritchRealms.MOD_ID, "phontum_plains"));
     public static final RegistryKey<Biome> ELDEM_WOODS = RegistryKey.of(RegistryKeys.BIOME,
             new Identifier(EldritchRealms.MOD_ID, "eldem_woods"));
+    public static final RegistryKey<Biome> EERIE_RIVER = RegistryKey.of(RegistryKeys.BIOME,
+            new Identifier(EldritchRealms.MOD_ID, "eerie_river"));
+    public static final RegistryKey<Biome> EERIE_OCEAN = RegistryKey.of(RegistryKeys.BIOME,
+            new Identifier(EldritchRealms.MOD_ID, "eerie_ocean"));
+    public static final RegistryKey<Biome> EERIE_BEACH = RegistryKey.of(RegistryKeys.BIOME,
+            new Identifier(EldritchRealms.MOD_ID, "eerie_beach"));
 
     public static void bootstrap(Registerable<Biome> context) {
         context.register(UMBRAM_OAK_FOREST, umbramOakForest(context));
         context.register(PHONTUM_PLAINS, phontumPlains(context));
         context.register(ELDEM_WOODS, eldemWoods(context));
+        context.register(EERIE_RIVER, eerieRiver(context));
+        context.register(EERIE_OCEAN, eerieOcean(context));
+        context.register(EERIE_BEACH, eerieBeach(context));
     }
 
+
     public static void globalOverworldGeneration(GenerationSettings.LookupBackedBuilder builder) {
-        addLandCarversWithoutLavaLakes(builder);
+        addLandCarvers(builder);
         DefaultBiomeFeatures.addAmethystGeodes(builder);
         DefaultBiomeFeatures.addDungeons(builder);
         DefaultBiomeFeatures.addMineables(builder);
@@ -51,8 +61,7 @@ public class EldritchRealmsBiomes {
                 new GenerationSettings.LookupBackedBuilder(context.getRegistryLookup(RegistryKeys.PLACED_FEATURE),
                         context.getRegistryLookup(RegistryKeys.CONFIGURED_CARVER));
 
-        addLandCarversWithoutLavaLakes(biomeBuilder);
-
+        addLandCarvers(biomeBuilder);
         addEldritchRealmsMineables(biomeBuilder);
         addUmbramOakForestVegetation(biomeBuilder);
 
@@ -86,7 +95,8 @@ public class EldritchRealmsBiomes {
                 new GenerationSettings.LookupBackedBuilder(context.getRegistryLookup(RegistryKeys.PLACED_FEATURE),
                         context.getRegistryLookup(RegistryKeys.CONFIGURED_CARVER));
 
-        addLandCarversWithoutLavaLakes(biomeBuilder);
+        addLandCarvers(biomeBuilder);
+        addPhontumLakes(biomeBuilder);
         addEldritchRealmsMineables(biomeBuilder);
         addPhontumPlainsVegetation(biomeBuilder);
 
@@ -119,8 +129,8 @@ public class EldritchRealmsBiomes {
                 new GenerationSettings.LookupBackedBuilder(context.getRegistryLookup(RegistryKeys.PLACED_FEATURE),
                         context.getRegistryLookup(RegistryKeys.CONFIGURED_CARVER));
 
-        addLandCarversWithoutLavaLakes(biomeBuilder);
-
+        addLandCarvers(biomeBuilder);
+        addEldemLakes(biomeBuilder);
         addEldritchRealmsMineables(biomeBuilder);
         addEldemWoodsVegetation(biomeBuilder);
 
@@ -144,18 +154,108 @@ public class EldritchRealmsBiomes {
     }
 
 
+    public static Biome eerieOcean(Registerable<Biome> context) {
+        SpawnSettings.Builder spawnBuilder = new SpawnSettings.Builder();
+
+
+        GenerationSettings.LookupBackedBuilder biomeBuilder =
+                new GenerationSettings.LookupBackedBuilder(context.getRegistryLookup(RegistryKeys.PLACED_FEATURE),
+                        context.getRegistryLookup(RegistryKeys.CONFIGURED_CARVER));
+
+        addEldritchRealmsMineables(biomeBuilder);
+
+        return new Biome.Builder()
+                .precipitation(false)
+                .downfall(0f)
+                .temperature(0.4f)
+                .generationSettings(new GenerationSettings.LookupBackedBuilder(context.getRegistryLookup(RegistryKeys.PLACED_FEATURE),
+                        context.getRegistryLookup(RegistryKeys.CONFIGURED_CARVER)).build())
+                .spawnSettings(new SpawnSettings.Builder().build())
+                .effects((new BiomeEffects.Builder())
+                        .waterColor(0x59456E)
+                        .waterFogColor(0x281E38)
+                        .fogColor(0x50455E)
+                        .skyColor(0x493F57)
+                        .moodSound(BiomeMoodSound.CAVE)
+                        .music(MusicType.createIngameMusic(RegistryEntry.of(EldritchRealmsSounds.ELDRITCH_REALMS_DIMENSION_AMBIENCE))).build())
+                .build();
+    }
+
+    public static Biome eerieRiver(Registerable<Biome> context) {
+        SpawnSettings.Builder spawnBuilder = new SpawnSettings.Builder();
+
+
+        GenerationSettings.LookupBackedBuilder biomeBuilder =
+                new GenerationSettings.LookupBackedBuilder(context.getRegistryLookup(RegistryKeys.PLACED_FEATURE),
+                        context.getRegistryLookup(RegistryKeys.CONFIGURED_CARVER));
+
+        addEldritchRealmsMineables(biomeBuilder);
+
+        return new Biome.Builder()
+                .precipitation(false)
+                .downfall(0f)
+                .temperature(0.4f)
+                .generationSettings(new GenerationSettings.LookupBackedBuilder(context.getRegistryLookup(RegistryKeys.PLACED_FEATURE),
+                        context.getRegistryLookup(RegistryKeys.CONFIGURED_CARVER)).build())
+                .spawnSettings(new SpawnSettings.Builder().build())
+                .effects((new BiomeEffects.Builder())
+                        .waterColor(0x59456E)
+                        .waterFogColor(0x281E38)
+                        .fogColor(0x50455E)
+                        .skyColor(0x493F57)
+                        .moodSound(BiomeMoodSound.CAVE)
+                        .music(MusicType.createIngameMusic(RegistryEntry.of(EldritchRealmsSounds.ELDRITCH_REALMS_DIMENSION_AMBIENCE))).build())
+                .build();
+    }
+
+    public static Biome eerieBeach(Registerable<Biome> context) {
+        SpawnSettings.Builder spawnBuilder = new SpawnSettings.Builder();
+
+
+        GenerationSettings.LookupBackedBuilder biomeBuilder =
+                new GenerationSettings.LookupBackedBuilder(context.getRegistryLookup(RegistryKeys.PLACED_FEATURE),
+                        context.getRegistryLookup(RegistryKeys.CONFIGURED_CARVER));
+
+        addEldritchRealmsMineables(biomeBuilder);
+
+        return new Biome.Builder()
+                .precipitation(false)
+                .downfall(0f)
+                .temperature(0.4f)
+                .generationSettings(new GenerationSettings.LookupBackedBuilder(context.getRegistryLookup(RegistryKeys.PLACED_FEATURE),
+                        context.getRegistryLookup(RegistryKeys.CONFIGURED_CARVER)).build())
+                .spawnSettings(new SpawnSettings.Builder().build())
+                .effects((new BiomeEffects.Builder())
+                        .waterColor(0x59456E)
+                        .waterFogColor(0x281E38)
+                        .fogColor(0x50455E)
+                        .skyColor(0x493F57)
+                        .moodSound(BiomeMoodSound.CAVE)
+                        .music(MusicType.createIngameMusic(RegistryEntry.of(EldritchRealmsSounds.ELDRITCH_REALMS_DIMENSION_AMBIENCE))).build())
+                .build();
+    }
+
+
     public static void addEldritchRealmsMineables(GenerationSettings.LookupBackedBuilder builder) {
         builder.feature(GenerationStep.Feature.UNDERGROUND_ORES, EldritchRealmsPlacedFeatures.DREADQUARTZ_ORE_PLACED_KEY);
         builder.feature(GenerationStep.Feature.UNDERGROUND_ORES, EldritchRealmsPlacedFeatures.SHADOWSTEEL_ORE_PLACED_KEY);
+        builder.feature(GenerationStep.Feature.UNDERGROUND_ORES, EldritchRealmsPlacedFeatures.ENIGMATIC_IRON_ORE_PLACED_KEY);
         builder.feature(GenerationStep.Feature.UNDERGROUND_ORES, EldritchRealmsPlacedFeatures.HALLOW_GOLD_ORE_PLACED_KEY);
         builder.feature(GenerationStep.Feature.UNDERGROUND_ORES, EldritchRealmsPlacedFeatures.NEBULATIC_LAPIS_ORE_PLACED_KEY);
         builder.feature(GenerationStep.Feature.UNDERGROUND_ORES, EldritchRealmsPlacedFeatures.ECLIPSIUM_ORE_PLACED_KEY);
     }
 
-    public static void addLandCarversWithoutLavaLakes(GenerationSettings.LookupBackedBuilder builder) {
+    public static void addLandCarvers(GenerationSettings.LookupBackedBuilder builder) {
         builder.carver(GenerationStep.Carver.AIR, ConfiguredCarvers.CAVE);
-        builder.carver(GenerationStep.Carver.AIR, ConfiguredCarvers.CAVE_EXTRA_UNDERGROUND);
         builder.carver(GenerationStep.Carver.AIR, ConfiguredCarvers.CANYON);
+    }
+
+    public static void addPhontumLakes(GenerationSettings.LookupBackedBuilder builder) {
+        builder.feature(GenerationStep.Feature.LAKES, EldritchRealmsPlacedFeatures.PHONTUM_LAKE_PLACED_KEY);
+    }
+
+    public static void addEldemLakes(GenerationSettings.LookupBackedBuilder builder) {
+        builder.feature(GenerationStep.Feature.LAKES, EldritchRealmsPlacedFeatures.ELDEM_LAKE_PLACED_KEY);
     }
 
     public static void addEldritchRealmsFlowersVegetation(GenerationSettings.LookupBackedBuilder builder) {
@@ -183,8 +283,5 @@ public class EldritchRealmsBiomes {
         builder.feature(GenerationStep.Feature.VEGETAL_DECORATION, EldritchRealmsPlacedFeatures.MYTHRAL_GRASS_PLACED_KEY);
         builder.feature(GenerationStep.Feature.VEGETAL_DECORATION, EldritchRealmsPlacedFeatures.TALL_MYTHRAL_GRASS_PLACED_KEY);
     }
-
-
-
 
 }

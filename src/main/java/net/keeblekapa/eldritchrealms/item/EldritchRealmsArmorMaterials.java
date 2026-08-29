@@ -13,6 +13,9 @@ public enum EldritchRealmsArmorMaterials implements ArmorMaterial {
         SHADOWSTEEL("shadowsteel", 42, new int[] {11, 16, 15, 13}, 18,
                 SoundEvents.ITEM_ARMOR_EQUIP_IRON, 2f, 0.05f, () -> Ingredient.ofItems(EldritchRealmsItems.SHADOWSTEEL_INGOT)),
 
+        ENIGMATIC_IRON("enigmatic_iron", 38, new int[] {9, 14, 12, 11}, 18,
+                SoundEvents.ITEM_ARMOR_EQUIP_IRON, 1.75f, 0.025f, () -> Ingredient.ofItems(EldritchRealmsItems.ENIGMATIC_IRON_INGOT)),
+
         HALLOW_GOLD("hallow_gold", 32, new int[] {7, 12, 10, 9}, 26,
                 SoundEvents.ITEM_ARMOR_EQUIP_GOLD, 0, 0, () -> Ingredient.ofItems(EldritchRealmsItems.HALLOW_GOLD_INGOT))
     ;

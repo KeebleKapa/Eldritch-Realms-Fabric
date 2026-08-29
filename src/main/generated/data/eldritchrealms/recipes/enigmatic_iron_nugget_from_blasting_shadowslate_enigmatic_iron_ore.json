@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 150,
+  "experience": 3.0,
+  "group": "enigmatic_iron_nugget_from_shadowslate_ore_blasting",
+  "ingredient": {
+    "item": "eldritchrealms:shadowslate_enigmatic_iron_ore"
+  },
+  "result": "eldritchrealms:enigmatic_iron_nugget"
+}

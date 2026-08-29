@@ -3,6 +3,7 @@ package net.keeblekapa.eldritchrealms.item;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.keeblekapa.eldritchrealms.EldritchRealms;
 import net.keeblekapa.eldritchrealms.block.EldritchRealmsBlocks;
+import net.keeblekapa.eldritchrealms.block.EldritchRealmsFluids;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -44,9 +45,25 @@ public class EldritchRealmsItems {
     public static final Item HALLOW_GOLD_NUGGET = registerItem("hallow_gold_nugget", new Item(new FabricItemSettings()));
     public static final Item HALLOW_GOLD_CLUMP = registerItem("hallow_gold_clump", new Item(new FabricItemSettings()));
 
+    // Enigmatic Iron
+    public static final Item ENIGMATIC_IRON_INGOT = registerItem("enigmatic_iron_ingot", new Item(new FabricItemSettings()));
+    public static final Item ENIGMATIC_IRON_NUGGET = registerItem("enigmatic_iron_nugget", new Item(new FabricItemSettings()));
+    public static final Item ENIGMATIC_IRON_CLUMP = registerItem("enigmatic_iron_clump", new Item(new FabricItemSettings()));
 
     // Extrotium
 
+
+
+    // Eerie Water
+    public static final Item EERIE_WATER_BUCKET = registerItem(
+            "eerie_water_bucket",
+            new BucketItem(
+                    EldritchRealmsFluids.STILL_EERIE_WATER,
+                    new FabricItemSettings()
+                            .recipeRemainder(Items.BUCKET)
+                            .maxCount(1)
+            )
+    );
 
 
     /**
@@ -62,7 +79,14 @@ public class EldritchRealmsItems {
     public static final Item SHADOWSTEEL_AXE = registerItem("shadowsteel_axe", new AxeItem(EldritchRealmsToolMaterials.SHADOWSTEEL, 5.0f, -3.0f, new FabricItemSettings()));
     public static final Item SHADOWSTEEL_HOE = registerItem("shadowsteel_hoe", new HoeItem(EldritchRealmsToolMaterials.SHADOWSTEEL, -4, 0.0f, new FabricItemSettings()));
 
+    // Enigmatic Iron
+    public static final Item ENIGMATIC_IRON_SWORD = registerItem("enigmatic_iron_sword", new SwordItem(EldritchRealmsToolMaterials.ENIGMATIC_IRON, 3, -2.4f, new FabricItemSettings()));
+    public static final Item ENIGMATIC_IRON_SHOVEL = registerItem("enigmatic_iron_shovel", new ShovelItem(EldritchRealmsToolMaterials.ENIGMATIC_IRON, 1.5f, -3.0f, new FabricItemSettings()));
+    public static final Item ENIGMATIC_IRON_PICKAXE = registerItem("enigmatic_iron_pickaxe", new PickaxeItem(EldritchRealmsToolMaterials.ENIGMATIC_IRON, 1, -2.8f, new FabricItemSettings()));
+    public static final Item ENIGMATIC_IRON_AXE = registerItem("enigmatic_iron_axe", new AxeItem(EldritchRealmsToolMaterials.ENIGMATIC_IRON, 5.0f, -3.0f, new FabricItemSettings()));
+    public static final Item ENIGMATIC_IRON_HOE = registerItem("enigmatic_iron_hoe", new HoeItem(EldritchRealmsToolMaterials.ENIGMATIC_IRON, -4, 0.0f, new FabricItemSettings()));
 
+    // Hallow Gold
     public static final Item HALLOW_GOLD_SWORD = registerItem("hallow_gold_sword", new SwordItem(EldritchRealmsToolMaterials.HALLOW_GOLD, 3, -2.4f, new FabricItemSettings()));
     public static final Item HALLOW_GOLD_SHOVEL = registerItem("hallow_gold_shovel", new ShovelItem(EldritchRealmsToolMaterials.HALLOW_GOLD, 1.5f, -3.0f, new FabricItemSettings()));
     public static final Item HALLOW_GOLD_PICKAXE = registerItem("hallow_gold_pickaxe", new PickaxeItem(EldritchRealmsToolMaterials.HALLOW_GOLD, 1, -2.8f, new FabricItemSettings()));
@@ -91,6 +115,16 @@ public class EldritchRealmsItems {
             new ArmorItem(EldritchRealmsArmorMaterials.SHADOWSTEEL, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
     public static final Item SHADOWSTEEL_BOOTS = registerItem("shadowsteel_boots",
             new ArmorItem(EldritchRealmsArmorMaterials.SHADOWSTEEL, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+
+    // Enigmatic Iron
+    public static final Item ENIGMATIC_IRON_HELMET = registerItem("enigmatic_iron_helmet",
+            new ArmorItem(EldritchRealmsArmorMaterials.ENIGMATIC_IRON, ArmorItem.Type.HELMET, new FabricItemSettings()));
+    public static final Item ENIGMATIC_IRON_CHESTPLATE = registerItem("enigmatic_iron_chestplate",
+            new ArmorItem(EldritchRealmsArmorMaterials.ENIGMATIC_IRON, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+    public static final Item ENIGMATIC_IRON_LEGGINGS = registerItem("enigmatic_iron_leggings",
+            new ArmorItem(EldritchRealmsArmorMaterials.ENIGMATIC_IRON, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+    public static final Item ENIGMATIC_IRON_BOOTS = registerItem("enigmatic_iron_boots",
+            new ArmorItem(EldritchRealmsArmorMaterials.ENIGMATIC_IRON, ArmorItem.Type.BOOTS, new FabricItemSettings()));
 
     // Hallow Gold
     public static final Item HALLOW_GOLD_HELMET = registerItem("hallow_gold_helmet",

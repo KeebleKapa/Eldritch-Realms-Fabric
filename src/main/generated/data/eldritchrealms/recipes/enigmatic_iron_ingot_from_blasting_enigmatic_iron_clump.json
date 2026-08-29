@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 150,
+  "experience": 3.0,
+  "group": "enigmatic_iron_ingot_blasting",
+  "ingredient": {
+    "item": "eldritchrealms:enigmatic_iron_clump"
+  },
+  "result": "eldritchrealms:enigmatic_iron_ingot"
+}
